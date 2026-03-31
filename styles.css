@@ -1,0 +1,3031 @@
+:root {
+  --bg: #f4eee7;
+  --bg-soft: #fbf7f1;
+  --paper: rgba(255, 253, 249, 0.86);
+  --paper-strong: #fffdf9;
+  --ink: #171311;
+  --muted: #5f5651;
+  --line: rgba(23, 19, 17, 0.12);
+  --line-strong: rgba(23, 19, 17, 0.18);
+  --brand: #7c2d1f;
+  --brand-deep: #4f1f16;
+  --gold: #d7a45b;
+  --white: #ffffff;
+  --dark: #151210;
+  --radius-xl: 14px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --shadow-soft: 0 22px 44px rgba(27, 21, 18, 0.08);
+  --shadow-tight: 0 12px 26px rgba(27, 21, 18, 0.05);
+
+  /* changed */
+  --shell: 1360px;
+  --shell-wide: 1440px;
+  --shell-narrow: 780px;
+
+  --transition: 220ms ease;
+}
+/* --- TWO COLUMN ALIGNMENT --- */
+.two-column-layout {
+  align-items: start; /* Snaps both columns to the exact same top-line */
+  gap: 4rem; /* Adds a bit more 'luxurious' space between the columns */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(124, 45, 31, 0.08), transparent 28rem),
+    linear-gradient(180deg, #f8f2eb 0%, var(--bg) 100%);
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+img,
+video,
+iframe {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+h1,
+h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3.3rem, 4.5vw, 6.2rem);
+  max-width: 10ch;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 3.6vw, 4.1rem);
+  max-width: 14ch;
+}
+
+h3 {
+  font-size: 1.32rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+li + li {
+  margin-top: 0.55rem;
+}
+
+.skip-link,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus {
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.85rem 1rem;
+  clip: auto;
+  background: var(--brand);
+  color: var(--white);
+  z-index: 100;
+}
+
+.shell,
+.shell-wide,
+.shell-narrow,
+.band-shell,
+.nav-shell {
+  width: min(calc(100% - 1.5rem), var(--shell));
+  margin: 0 auto;
+}
+
+.shell-wide,
+.band-shell {
+  width: min(calc(100% - 1.5rem), var(--shell-wide));
+}
+
+.shell-narrow {
+  width: min(calc(100% - 1.5rem), var(--shell-narrow));
+}
+
+body[data-page="home"] .editorial-hero-grid {
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  gap: 3rem;
+}
+
+body[data-page="home"] .hero-copy {
+  max-width: none;
+}
+
+body[data-page="home"] .hero-visual {
+  align-self: start;
+  padding-top: 2.25rem;
+}
+
+body[data-page="home"] .media-frame--hero {
+  min-height: 0;
+  height: clamp(28rem, 56vh, 38rem);
+}
+body[data-page="home"] .hero-capabilities {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+
+.nav-shell {
+  width: min(calc(100% - 1.5rem), var(--shell));
+}
+.page-section,
+.page-band {
+  padding: clamp(4rem, 5vw, 5rem) 0;
+}
+
+.page-section--tight {
+  padding: clamp(3.8rem, 5vw, 4.8rem) 0;
+}
+
+.page-band {
+  position: relative;
+}
+
+.band-shell {
+  padding: clamp(2.15rem, 3vw, 2.85rem);
+  border-radius: 28px;
+}
+
+.band-dark .band-shell {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(215, 164, 91, 0.15), transparent 18rem),
+    linear-gradient(140deg, #161210 0%, #2b1d1a 52%, #4b231c 100%);
+  color: var(--white);
+}
+
+.band-soft .band-shell {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(243, 234, 223, 0.92));
+  border: 1px solid rgba(23, 19, 17, 0.06);
+  box-shadow: var(--shadow-tight);
+}
+
+.band-dark h2,
+.band-dark h3,
+.band-dark p,
+.band-dark li,
+.band-dark .eyebrow,
+.band-dark .text-link-light {
+  color: var(--white);
+}
+
+.band-dark p,
+.band-dark li {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 0.45rem; /* Added space to push away from the black heading */
+}
+
+.eyebrow.light {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.text-link-light {
+  color: var(--gold);
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  padding-top: 0.8rem;
+}
+
+/* --- PREMIUM HEADER UPGRADE --- */
+.nav-shell {
+  width: min(calc(100% - 1.5rem), var(--shell-wide)); /* Widened to perfectly match the hero text */
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  justify-content: space-between;
+  padding: 1.5rem 0; /* Removed horizontal padding so the logo pushes flush to the left margin */
+  background: transparent; /* Removed the boxed look at the top of the page */
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Creates a sleek, floating glass "pill" ONLY when the user scrolls down */
+.site-header.is-scrolled .nav-shell {
+  padding: 0.7rem 1.5rem;
+  margin-top: 0.5rem;
+  background: rgba(251, 248, 243, 0.65); /* Dropped from 0.9 to 0.65 for that translucent glass look */
+  border: 1px solid rgba(23, 19, 17, 0.06); /* Softened the border slightly */
+  border-radius: 20px; /* Changed from 999px to 20px to match the radius of your video player/images */
+  backdrop-filter: blur(16px); /* Increased the blur slightly to keep text readable through the lighter background */
+  box-shadow: var(--shadow-soft);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  max-width: 13rem;
+  flex-shrink: 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.site-nav a,
+.nav-trigger {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(23, 19, 17, 0.78);
+}
+
+.site-nav a:hover,
+.site-nav a.is-active,
+.nav-trigger:hover,
+.nav-trigger.is-active,
+.nav-group.is-open > .nav-trigger,
+.nav-group.has-active > .nav-trigger {
+  color: var(--ink);
+}
+
+.nav-group {
+  position: relative;
+}
+
+.nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nav-trigger::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 0.8rem);
+  left: 0;
+  min-width: 16rem;
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.55rem;
+  background: rgba(255, 253, 249, 0.98);
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+}
+
+.nav-dropdown a {
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+}
+
+.nav-dropdown a:hover,
+.nav-dropdown a.is-active {
+  background: rgba(23, 19, 17, 0.05);
+}
+
+@media (hover: hover) {
+  .nav-group:hover .nav-dropdown,
+  .nav-group:focus-within .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span:not(.sr-only) {
+  display: block;
+  width: 1.4rem;
+  height: 2px;
+  margin: 0.28rem 0;
+  background: var(--ink);
+  border-radius: 999px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.82rem 1.22rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, var(--brand) 0%, #98503c 100%);
+  color: var(--white);
+  box-shadow: 0 12px 24px rgba(124, 45, 31, 0.15);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(23, 19, 17, 0.08);
+  color: var(--ink);
+}
+
+.header-cta {
+  margin-left: 0.2rem;
+}
+
+.editorial-hero {
+  padding: 8rem 0 4.9rem;
+}
+
+.editorial-hero-grid,
+.section-header-row,
+.feature-layout,
+.contact-stage,
+.footer-grid,
+.ceo-hero-grid,
+.two-column-layout {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.editorial-hero-grid {
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  align-items: center;
+}
+
+.proof-stage {
+  display: grid;
+  gap: 4.5rem;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center; /* Centers the whole row */
+}
+
+/* Forces the Mayor video to anchor to the bottom of the section */
+.home-proof .proof-stage-media {
+  align-self: center;
+  align-content: center; /* Forces the video to respect the middle alignment */
+}
+
+.hero-copy,
+.feature-copy,
+.proof-stage-copy,
+.contact-intro,
+.contact-support,
+.ceo-summary,
+.editorial-block,
+.footer-column,
+.support-panel,
+.footer-brand-block {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.hero-copy p,
+.proof-stage-copy p,
+.feature-copy p,
+.editorial-block p,
+.contact-intro p,
+.section-header-row > p,
+.section-header-centered p {
+  max-width: 62ch;
+}
+
+.hero-actions {
+  margin-top: 0.2rem;
+}
+
+.hero-capabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.hero-capabilities article {
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+}
+
+.hero-capabilities article:not(:last-child) {
+  padding-right: 1rem;
+  border-right: 1px solid rgba(23, 19, 17, 0.1);
+}
+
+.hero-capabilities h3 {
+  font-size: 1.05rem;
+}
+
+.hero-visual,
+.hero-visual-stack,
+.proof-stage-media,
+.feature-media,
+.ceo-video-stage {
+  display: grid;
+  gap: 1rem;
+}
+
+.media-frame {
+  overflow: hidden;
+  background: var(--paper-strong);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.media-frame img,
+.media-frame video {
+  height: 100%;
+  object-fit: cover;
+}
+
+body[data-page="home"] .media-frame--hero img {
+  object-position: 58% center;
+}
+
+.media-frame--hero {
+  min-height: 38rem; /* bigger image */
+}
+
+.hero-visual {
+  margin-top: 20px; /* drops image slightly */
+}
+
+.media-frame--wide {
+  aspect-ratio: 1.45;
+}
+
+.media-frame--square {
+  aspect-ratio: 1;
+}
+
+.media-frame--portrait {
+  aspect-ratio: 0.86;
+}
+
+.media-frame--video {
+  background: #0d0a09;
+}
+
+.media-frame iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.hero-media-note,
+.system-outline,
+.support-panel,
+.quote-block,
+.cta-panel,
+.contact-form-panel {
+  border-radius: var(--radius-lg);
+}
+
+.contact-form-panel {
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  box-shadow: var(--shadow-tight);
+  padding: 1.3rem 1.35rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(242, 233, 224, 0.9));
+}
+
+.section-header-row {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: start;
+  margin-bottom: 2.4rem;
+}
+
+
+.section-header-centered {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  justify-items: center;
+}
+
+
+/* --- MARQUEE HEADER (Centered, slightly smaller font) --- */
+.section-header-marquee {
+  display: grid;
+  gap: 1rem;
+  max-width: 60rem; 
+  margin: 0 auto 4rem; 
+  text-align: center;
+  justify-items: center;
+}
+
+.section-header-marquee h2 {
+  max-width: none; 
+  margin: 0 auto;
+  padding: 0 1rem; 
+  /* Shrinks the font size down so it doesn't look massive and overbearing */
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem); 
+  font-weight: 500; 
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+/* --- CORE SOLUTIONS HEADER (Perfectly left-aligned to grid) --- */
+.section-header-stacked {
+  display: grid;
+  gap: 1.2rem;
+  max-width: none; /* Removes the container limit so it perfectly aligns with the columns below */
+  margin-bottom: 4rem; 
+}
+
+.section-header-stacked h2 {
+  max-width: 50rem; /* Applies the width limit strictly to the headline */
+}
+
+.section-header-stacked .section-lead {
+  font-size: 1.15rem; 
+  max-width: 60ch; 
+  color: var(--muted);
+}
+
+.section-lead {
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 520px;
+}
+
+/* --- NEW MARQUEE STYLES --- */
+.trust-band-marquee {
+  padding-top: 2rem; /* Reduced from 3rem */
+  padding-bottom: 2rem; /* Reduced from 4rem */
+  overflow: hidden;
+}
+
+.trust-band-marquee .band-shell {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: transparent; /* Removes the white gradient */
+  border: none; /* Removes the outline */
+  box-shadow: none; /* Removes the drop shadow */
+}
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1rem; /* Reduced drastically from 3.5rem */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 0; /* Removed the gap so the white backgrounds touch seamlessly */
+  width: max-content;
+  animation: scrollMarquee 35s linear infinite;
+}
+
+.marquee-track img {
+  height: 200px; /* Increased massively to account for the padding inside your image files */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translates exactly half the track width for a perfect, gapless loop */
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.solutions-overview,
+.three-up-list,
+.footer-links,
+.list-columns,
+.value-rows,
+.contact-flow,
+.process-list {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.solutions-overview,
+.three-up-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  grid-auto-rows: 1fr;
+}
+
+/* --- CUSTOM VIDEO PLAYER --- */
+.custom-video-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+/* --- BROWSER COLOR GRADING UPGRADE --- */
+.custom-video-wrapper video {
+  /* Increased sepia to 0.25 for a warmer, high-end editorial feel */
+  filter: sepia(0.25) saturate(1.1) contrast(1.05); 
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.5rem;
+  height: 4.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand); /* Uses your exact brand red */
+  cursor: pointer;
+  transition: transform var(--transition), background var(--transition), opacity 0.3s ease;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Visually centers the triangle inside the circle */
+.play-overlay svg {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.3rem; 
+}
+
+/* Hover effect */
+.custom-video-wrapper:hover .play-overlay {
+  transform: translate(-50%, -50%) scale(1.05);
+  background: #ffffff;
+}
+
+/* Hides the button seamlessly when the video starts */
+.custom-video-wrapper.is-playing .play-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.solution-track,
+.insight-lane,
+.value-row,
+.list-group,
+.contact-flow article,
+.process-step,
+.outline-link,
+.lane-row {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.solution-track,
+.insight-lane,
+.lane-row,
+.outline-link,
+.value-row,
+.list-group {
+  display: grid;
+  gap: 0.8rem;
+  align-content: start;
+}
+
+.solution-track p,
+.insight-lane p,
+.lane-row p,
+.list-group p,
+.value-row p {
+  max-width: 60ch;
+}
+
+.process-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.8rem;
+  grid-auto-rows: 1fr;
+}
+
+.process-list--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.process-step {
+  display: grid;
+  gap: 0.7rem;
+  align-content: start;
+}
+
+.process-step span,
+.contact-flow span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(124, 45, 31, 0.12);
+  color: var(--brand);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.band-dark .process-step,
+.band-dark .outline-link,
+.band-dark .value-row,
+.band-dark .list-group {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.band-dark .process-step span {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+}
+
+.proof-stage {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: start;
+}
+
+.proof-stage--reverse {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+}
+
+.proof-stage--reverse .proof-stage-media {
+  order: 2;
+}
+
+.proof-stage--reverse .proof-stage-copy {
+  order: 1;
+}
+
+.proof-stage-media .media-frame {
+  min-height: 30rem;
+}
+
+.quote-block {
+  padding: 0; /* Removed the left padding so the text aligns perfectly */
+  border-left: none; /* Strips the red artifact line completely */
+  box-shadow: none;
+  background: transparent;
+  margin: 0 0 1.8rem 0; /* Adds a nice cushion of space below the quote */
+}
+
+.quote-block p {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.quote-block footer {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.proof-list,
+.clean-list {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-list li,
+.clean-list li {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.clean-list li {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  list-style: none;
+}
+
+.clean-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.band-dark .proof-list li,
+.band-dark .clean-list li,
+.band-dark .section-header-row > p,
+.band-dark .section-header-centered p,
+.band-dark .lane-row p,
+.band-dark .value-row p,
+.band-dark .support-panel p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.band-dark .proof-list li,
+.band-dark .clean-list li {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.band-dark .quote-block p,
+.band-dark .quote-block footer {
+  color: var(--white);
+}
+
+.feature-layout,
+.contact-stage,
+.ceo-hero-grid,
+.two-column-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.94fr);
+  align-items: start;
+}
+
+.feature-layout--reverse {
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1fr);
+}
+
+.feature-layout--reverse .feature-media {
+  order: 2;
+}
+
+.feature-layout--reverse .feature-copy {
+  order: 1;
+}
+
+.lane-list {
+  display: grid;
+  gap: 0;
+}
+
+.lane-row {
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+  align-items: start;
+  gap: 1.8rem;
+  padding-bottom: 1.15rem;
+}
+
+.lane-row > :last-child {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.system-outline {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  background: transparent;
+}
+
+
+/* --- ENHANCED CREAM PANEL --- */
+.support-panel {
+  margin-top: .5rem;
+  padding: 2.5rem;
+  /* Using a richer cream (#fcf8f2) that is clearly distinct from white */
+  background-color: #fcf8f2 !important; 
+  border: 1px solid rgba(124, 45, 31, 0.12); /* Subtle brand-tinted border */
+  border-radius: var(--radius-lg);
+  /* Added a slightly deeper warm shadow for a "nicer" lifted effect */
+  box-shadow: 0 15px 35px rgba(124, 45, 31, 0.06); 
+}
+
+.support-panel strong {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand); /* Standardized brand red */
+}
+
+.support-panel .clean-list li {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(124, 45, 31, 0.1);
+}
+
+.support-panel .clean-list li strong {
+  color: var(--brand); /* The 'Pop' of color you were missing */
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.outline-link:first-child,
+.lane-row:first-child,
+.value-row:first-child,
+.list-group:first-child,
+.insight-lane:first-child,
+.contact-flow article:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.editorial-block {
+  max-width: 56rem;
+}
+
+.editorial-columns,
+.list-columns,
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.value-rows {
+  max-width: 60rem;
+}
+
+.value-row {
+  grid-template-columns: minmax(0, 0.28fr) minmax(0, 0.72fr);
+  gap: 1.6rem;
+}
+
+.value-row strong {
+  color: var(--ink);
+}
+
+.simple-link-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.ceo-hero-grid {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+}
+
+.ceo-portrait-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.58fr) minmax(0, 0.42fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.ceo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.ceo-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(124, 45, 31, 0.1);
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.contact-stage {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  align-items: start;
+}
+
+.contact-form-panel {
+  padding: 1.8rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(23, 19, 17, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(124, 45, 31, 0.16);
+  border-color: rgba(124, 45, 31, 0.35);
+}
+
+.contact-support {
+  gap: 1.2rem;
+}
+
+
+.contact-flow {
+  margin-top: 1rem;
+}
+
+.contact-flow article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+}
+
+.form-note {
+  min-height: 1.4rem;
+  font-size: 0.94rem;
+}
+
+.cta-panel {
+  padding: 1.55rem 1.6rem;
+  border: 0;
+  box-shadow: none;
+}
+
+.cta-panel--dark {
+  background: linear-gradient(135deg, #1a1513 0%, #2d1814 100%); /* Deeper, richer brown */
+  color: var(--white);
+  padding: 4.5rem 4rem; /* Gives the text massive, luxurious breathing room */
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Adds a faint premium rim light */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15); /* Gives the card a subtle lift off the beige page */
+}
+
+.cta-panel--dark h2,
+.cta-panel--dark p {
+  color: var(--white);
+}
+
+.cta-panel--dark p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.cta-panel--light {
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(243,234,223,0.98));
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  border-radius: 20px;
+  padding: 3rem 3rem;
+  box-shadow: var(--shadow-tight);
+}
+
+.hero-centered {
+  padding-bottom: 3.8rem;
+}
+
+.hero-centered .section-header-centered {
+  margin-bottom: 0;
+}
+
+.ceo-hero-primary {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.ceo-hero-primary .media-frame {
+  min-height: 34rem;
+}
+
+.ceo-hero-secondary {
+  display: grid;
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.ceo-hero-positioning {
+  display: grid;
+  gap: 0.9rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--line);
+}
+
+.proof-stage-media--mayor .media-frame {
+  min-height: auto; /* Removes the forced tall box */
+  aspect-ratio: 16 / 9; /* Locks the box to exact standard video dimensions */
+  width: 100%;
+}
+
+.solutions-overview-links {
+  margin-top: 2.4rem;
+}
+
+.solution-detail-header {
+  display: grid;
+  gap: 1rem;
+  max-width: 44rem;
+}
+
+.outcome-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+/* --- FINAL CTA PREMIUM SPACING --- */
+.final-cta .cta-panel--dark {
+  padding: 5.5rem 5rem; /* Increased padding for massive breathing room */
+}
+
+.final-cta .cta-panel__content {
+  display: grid;
+  gap: 1.5rem; /* Explicitly pushes eyebrow, h2, and p apart */
+}
+
+.final-cta h2 {
+  color: var(--white);
+  max-width: 20ch;
+  margin-bottom: 0; /* Resetting margin so the grid gap handles it */
+}
+
+.final-cta p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 55ch;
+  line-height: 1.6;
+}
+
+.final-cta .cta-panel__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5rem; /* More space between the text block and the button */
+  align-items: center;
+}
+.final-cta .button-row {
+  justify-content: flex-end; /* Pushes the button to the far right */
+}
+
+/* Mobile Fix: Stack them when the screen gets small */
+@media (max-width: 860px) {
+  .final-cta .cta-panel__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .final-cta .button-row {
+    justify-content: center;
+  }
+}
+
+.cta-panel__grid {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.cta-panel__grid h2 {
+  max-width: 20ch;
+}
+
+.cta-panel__grid p {
+  max-width: 55ch;
+}
+
+
+.outcome-list li {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+/* --- LEADERSHIP CARD GLOW --- */
+.list-columns .outline-card {
+  background: rgba(255, 255, 255, 0.6); /* Slightly more opaque for better contrast */
+  border: 1px solid rgba(124, 45, 31, 0.08); /* Adds a hint of the brand red to the border */
+}
+
+.process-step p strong {
+  display: block;
+  color: var(--brand); /* Makes the outcome titles pop */
+  margin-bottom: 0.25rem;
+}
+
+/* --- ENGAGEMENT FORMATS ALIGNMENT --- */
+.engagement-section {
+  background: transparent;
+  padding: 4rem 0;
+}
+
+/* We remove the width from the section itself so it behaves like the section above */
+.engagement-section .shell-wide {
+  display: block; 
+}
+
+.engagement-section .section-header-stacked {
+  margin-bottom: 3.5rem;
+  max-width: 850px; /* Prevents the headline and lead from stretching to the far right */
+}
+
+.engagement-section .section-lead {
+  font-size: 1.2rem;
+  color: #4e4641;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.engagement-section .process-list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.engagement-section .process-step {
+  border-top: 1px solid rgba(23, 19, 17, 0.14);
+  padding-top: 1.5rem;
+}
+
+.home-how-it-works .section-header-centered,
+.about-process .section-header-centered,
+.insights-hero .section-header-centered {
+  max-width: 48rem;
+}
+
+.home-proof .proof-stage-copy,
+.home-proof .proof-stage-media,
+.participant-proof .proof-stage-copy,
+.participant-proof .proof-stage-media {
+  align-content: start;
+}
+
+/* --- PREMIUM SPLIT CTA LAYOUT (FIXED) --- */
+.home-cta .cta-panel__grid {
+  grid-template-columns: 1fr auto; 
+  align-items: end; /* Pulls the button down so it anchors perfectly with the paragraph */
+  gap: 4rem;
+  text-align: left;
+  max-width: 68rem; /* Stops the content from stretching into an awkward void */
+  margin: 0 auto; /* Centers the whole text/button group inside the dark box */
+}
+
+.home-cta .cta-panel__grid > div {
+  max-width: 42rem; /* Controls the text width so the headline breaks cleanly */
+}
+
+.home-cta .cta-panel__grid h2 {
+  max-width: none; /* Ensures the headline isn't artificially choked */
+  margin-bottom: 1.2rem; /* Adds breathing room between the big text and the small text */
+}
+
+.home-cta .button-row {
+  justify-content: flex-end; 
+  padding-bottom: 0.2rem; /* Tiny optical adjustment to make the button perfectly flush with the text baseline */
+}
+.solutions-hero .hero-copy {
+  max-width: 34rem;
+}
+
+.solutions-hero .system-outline {
+  align-self: stretch;
+  gap: 0.55rem;
+  padding: 0.75rem 0;
+}
+
+.about-purpose-block {
+  max-width: 52rem;
+}
+
+.about-values-header {
+  margin-bottom: 2.8rem;
+}
+
+.about-values-header .section-header-row,
+.about-values-header.section-header-row {
+  align-items: start;
+}
+
+body[data-page="ceo"] .page-section,
+body[data-page="ceo"] .page-band {
+  padding: clamp(4.2rem, 5vw, 5rem) 0;
+}
+
+body[data-page="ceo"] .editorial-hero {
+  padding-bottom: 4rem;
+}
+
+body[data-page="ceo"] .section-header-centered {
+  max-width: 60rem;
+}
+
+.ceo-hero-primary {
+  gap: 1.55rem;
+}
+
+.ceo-hero-secondary {
+  grid-template-columns: minmax(0, 0.36fr) minmax(0, 0.64fr);
+  align-items: start;
+}
+
+.ceo-hero-secondary .media-frame--portrait {
+  max-width: 20rem;
+}
+
+.ceo-hero-secondary .media-frame--portrait img {
+  object-position: center top;
+}
+
+.ceo-hero-positioning {
+  max-width: 42rem;
+}
+
+.ceo-benefits-intro {
+  max-width: 54rem;
+  margin: 0 auto 2.4rem;
+}
+
+.ceo-benefits-intro p {
+  margin: 0 auto;
+}
+
+.insights-lessons .section-header-row {
+  align-items: start;
+}
+
+.site-footer {
+  margin-top: 4.5rem;
+  padding: 2.6rem 0 1.15rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(243, 235, 226, 0.72));
+  border-top: 1px solid rgba(23, 19, 17, 0.08);
+}
+
+/* --- SECTION ZONING --- */
+.packages-zone {
+  background-color: #fbf7f1; /* Subtle shift from the main page bg */
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 5rem 0;
+}
+
+/* --- NUMERICAL SPARK --- */
+.process-step span, 
+.contact-flow article span {
+  background: var(--gold) !important; /* Swapping the muted red for a bright gold accent */
+  color: var(--ink) !important;
+  font-weight: 900;
+  box-shadow: 0 4px 10px rgba(215, 164, 91, 0.2);
+}
+
+/* --- OUTCOME GRID PREMIUM --- */
+.outcome-grid-premium {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.outcome-stat {
+  padding: 2rem;
+  border-left: 3px solid var(--gold); /* Vertical gold line for visual interest */
+  background: white;
+  border-radius: 0 12px 12px 0;
+}
+
+.outcome-stat strong {
+  display: block;
+  font-family: "Newsreader", serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- REFINED 4-COLUMN FOOTER GRID --- */
+.footer-grid {
+  /* Gives the logo block 2 fractions of space, and the link columns 1 fraction each */
+  grid-template-columns: 2fr 1fr 1fr 1fr; 
+  gap: 4rem; /* Adds generous, elegant spacing between all columns */
+  align-items: start;
+}
+
+.footer-brand-block {
+  max-width: 24rem; /* Keeps the logo and description from stretching too wide */
+}
+
+/* Deletes the old .footer-links rule entirely since we removed it from the HTML */
+
+.footer-column {
+  gap: 0.55rem;
+}
+
+.footer-heading {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.footer-lead {
+  max-width: 30rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.15rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer-bottom a {
+  white-space: nowrap;
+}
+
+
+
+.hero-copy-stacked {
+  max-width: 58rem;
+  margin-bottom: 4.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-copy-stacked h1 {
+  max-width: 14ch; /* Keeps the headline punchy */
+}
+
+
+.outline-card {
+  display: grid;
+  gap: 0.95rem;
+  background: rgba(255, 255, 255, 0.42);
+  padding: 2rem 1.75rem;
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  border-radius: 10px;
+  min-height: 100%;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.outline-card .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  max-width: 22ch;
+}
+
+.outline-card strong {
+  font-size: 1.32rem;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.outline-card p:not(.eyebrow) {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  max-width: 34ch;
+}
+
+.outline-card .text-link {
+  margin-top: 0.2rem;
+}
+.outline-card:hover {
+  background: white !important;
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(27, 21, 18, 0.1); /* Deep, premium shadow */
+  border-color: var(--gold);
+}
+
+/* --- SCOPED ABOUT PAGE: PRINCIPLES UPGRADE --- */
+
+/* --- SCOPED ABOUT PAGE: PRINCIPLES UPGRADE --- */
+
+/* 1. Force the grid to stretch all cards to equal height */
+body[data-page="about"] .process-list--eight {
+  align-items: stretch !important; /* Overrides the shrink-wrapping */
+}
+
+/* 2. Turn the 8 items into premium editorial cards */
+body[data-page="about"] .process-list--eight .process-step {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* Ensures the white card fills the entire stretched space */
+  background: rgba(255, 255, 255, 0.5); 
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  border-top: 3px solid var(--gold); 
+  border-radius: var(--radius-md);
+  padding: 2rem 1.8rem; 
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  gap: 0.8rem;
+}
+
+/* Hover lift effect for interactivity */
+body[data-page="about"] .process-list--eight .process-step:hover {
+  transform: translateY(-6px);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  border-color: rgba(215, 164, 91, 0.4); 
+}
+
+/* 3. Fix the broken number badges */
+body[data-page="about"] .process-list--eight .process-step span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 2.2rem !important; 
+  height: 2.2rem !important;
+  padding: 0 !important;
+  border-radius: 50% !important; 
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(215, 164, 91, 0.25);
+  margin-bottom: 0.5rem;
+}
+/* 3. Refine the typography for high-end readability */
+body[data-page="about"] .process-list--eight .process-step h3 {
+  font-family: "Newsreader", serif;
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+body[data-page="about"] .process-list--eight .process-step p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* --- SCOPED CONTACT PAGE UPGRADES --- */
+
+/* 1. Fix the Awkward Headline Break */
+body[data-page="contact"] .editorial-hero h1 {
+  max-width: 18ch !important; /* Allows '15-minute' to stay on one line */
+  margin: 0 auto;
+}
+
+/* 2. Give the Form and Sidebar more breathing room */
+body[data-page="contact"] .contact-stage {
+  gap: 4rem; 
+}
+
+/* 3. Premium Form Panel Styling */
+body[data-page="contact"] .contact-form-panel {
+  padding: 3.5rem 3rem; /* Luxurious inner padding */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--brand); /* Strong 'WrightNow' red anchor at the top */
+  background: var(--paper-strong); /* Clean white */
+  box-shadow: var(--shadow-soft);
+}
+
+body[data-page="contact"] .contact-form-panel .eyebrow {
+  margin-top: 0 !important;
+}
+
+/* 4. Elegant Input Fields */
+body[data-page="contact"] .contact-form input,
+body[data-page="contact"] .contact-form select,
+body[data-page="contact"] .contact-form textarea {
+  border-radius: 8px; /* Slightly sharper corners for a professional feel */
+  border: 1px solid rgba(23, 19, 17, 0.15);
+  background: #fdfbf8; /* Very crisp off-white */
+  padding: 1.1rem; /* Taller, easier to click */
+  transition: all var(--transition);
+}
+
+body[data-page="contact"] .contact-form input:focus,
+body[data-page="contact"] .contact-form select:focus,
+body[data-page="contact"] .contact-form textarea:focus {
+  outline: none;
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 4px rgba(215, 164, 91, 0.1) !important; /* Soft gold glow instead of harsh blue */
+}
+
+/* 5. Unify the Sidebar Layout */
+body[data-page="contact"] .contact-support {
+  gap: 1.5rem;
+}
+
+body[data-page="contact"] .support-panel {
+  padding: 2.25rem; /* Normalizes the cream boxes */
+}
+
+/* 6. Clean 1-2-3 Process Flow (Fixes the overlapping numbers and double lines) */
+body[data-page="contact"] .contact-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Removes the double-spacing gap */
+  margin-top: 0.5rem;
+  padding: 2.25rem;
+  background: rgba(255, 255, 255, 0.6); 
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+body[data-page="contact"] .contact-flow article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(23, 19, 17, 0.08); /* Single, elegant divider */
+}
+
+body[data-page="contact"] .contact-flow article:first-child {
+  padding-top: 0;
+}
+
+body[data-page="contact"] .contact-flow article:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* 7. Refined Typography & Fixed Number Badges */
+body[data-page="contact"] .contact-flow article span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+  font-family: "Plus Jakarta Sans", sans-serif; /* Overrides the CEO serif font */
+  font-size: 0.95rem; /* Resets the giant text size */
+  font-weight: 800;
+  border-radius: 50%; 
+  opacity: 1; /* Removes the faded look */
+  box-shadow: 0 4px 10px rgba(215, 164, 91, 0.2);
+  margin-top: 0.1rem; /* Aligns the badge perfectly with the heading text */
+}
+
+body[data-page="contact"] .contact-flow article h3 {
+  font-family: "Newsreader", serif;
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin: 0 0 0.4rem 0;
+}
+
+body[data-page="contact"] .contact-flow article p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+
+/* --- PREMIUM FOOTER REFINEMENT --- */
+.site-footer {
+  font-size: 0.9rem; /* Shrinks the overall text size */
+}
+
+.footer-heading {
+  font-size: 0.85rem; 
+  text-transform: uppercase; /* Makes the column headers look more editorial */
+  letter-spacing: 0.1em;
+  color: var(--brand); /* Uses your brand red instead of heavy black */
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a, 
+.footer-column p, 
+.footer-column a {
+  color: var(--muted); /* Softens the links so they aren't stark black */
+  transition: color var(--transition);
+}
+
+.footer-links a:hover, 
+.footer-column a:hover {
+  color: var(--ink); /* Makes them turn dark black only when hovered */
+}
+
+/* --- ENGAGEMENT FORMATS FIX --- */
+.engagement-section {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.engagement-section .process-list {
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+.engagement-section .process-step {
+  border-top: 1px solid rgba(23, 19, 17, 0.14);
+  padding-top: 1.2rem;
+}
+
+.engagement-section .section-header-row {
+  margin-bottom: 2.5rem;
+}
+
+.engagement-section .process-step span {
+  background: rgba(124, 45, 31, 0.12);
+}
+
+/* --- ENHANCED CORE SOLUTIONS GRID --- */
+.solutions-overview {
+  gap: 3.5rem; /* Drastically increases horizontal space between the three columns */
+  margin-top: 1.5rem; /* Adds a bit more space between the intro paragraph and the columns */
+}
+
+/* Overrides the default 1rem padding to give the text room to breathe under the line */
+.solution-track {
+  padding-top: 1.8rem; 
+}
+
+/* Gives the paragraphs inside the columns a slightly softer color so the bold headers pop more */
+.solution-track p:not(.eyebrow) {
+  color: #6a625d; 
+  font-size: 0.95rem; /* Slightly smaller to contrast with the h3 */
+  line-height: 1.6;
+}
+
+/* --- PREMIUM INTERACTIVE LINKS --- */
+.text-link {
+  margin-top: 0.5rem; /* Pushes the link away from the paragraph slightly */
+}
+
+.text-link::after {
+  content: "→";
+  font-family: sans-serif; /* Ensures the arrow renders cleanly */
+  margin-left: 0.2rem;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.text-link:hover::after {
+  transform: translateX(6px); /* Creates the sleek sliding arrow effect on hover */
+}
+
+/* --- HOW IT WORKS HEADER FIX --- */
+/* Widen the container so the text can spread out horizontally */
+.home-how-it-works .section-header-centered {
+  max-width: 60rem; /* Increased from the default 46rem */
+}
+
+/* Remove the aggressive text wrapping limit */
+.home-how-it-works .section-header-centered h2 {
+  max-width: none; /* Overrides the global 14ch rule */
+  padding: 0 1rem; 
+}
+
+/* Add a bit more breathing room between the text and the 4 columns */
+.home-how-it-works .process-list {
+  margin-top: 1rem; 
+}
+
+/* --- CAPABILITY TRACKS 3-COLUMN UPGRADE --- */
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.capability-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.4); /* Very subtle translucent background */
+  border: 1px solid rgba(23, 19, 17, 0.08);
+  border-radius: 20px;
+  transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
+}
+
+.capability-card:hover {
+  transform: translateY(-6px); /* Lifts the card up on hover */
+  background: rgba(255, 255, 255, 0.95); /* Turns solid white */
+  box-shadow: var(--shadow-soft); /* Adds a premium drop shadow */
+}
+
+.capability-card h3 {
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+.capability-card p:not(.eyebrow) {
+  font-size: 0.95rem;
+  flex-grow: 1; /* Automatically pushes the text-link to the absolute bottom of the card */
+  margin-bottom: 1rem;
+}
+
+
+/* --- BOTTOM GRID SPACING --- */
+.system-outline-grid {
+  margin-top: 3.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem;
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+
+
+/* --- LEADERSHIP HERO ZOOM-OUT FIX --- */
+.solutions-hero-realigned .media-frame--hero {
+  aspect-ratio: 4 / 3; /* Makes the box wider to fit more of the landscape photo */
+  min-height: auto; /* Overrides the tall 'home' height */
+}
+
+.solutions-hero-realigned .media-frame--hero img {
+  object-position: 50% 50%; /* Centers the shot to capture the board AND the lady on the right */
+}
+
+/* --- TEAM HERO REFINEMENT (IMAGE 2) --- */
+.solutions-hero-realigned .media-frame--hero img {
+  object-position: center 25%; /* Anchors the crop on their eyes/faces */
+  filter: sepia(0.12) contrast(1.02); /* Keep it subtle since the photo is already warm */
+}
+
+/* --- PROFESSIONAL HERO WARMTH BRIDGE --- */
+.solutions-hero-realigned .media-frame--hero img {
+  object-position: 50% 25%; /* Anchors the crop on her eyes and profile */
+  filter: sepia(0.18) contrast(1.05) saturate(1.1); /* Adds brand warmth back into the cool blues */
+}
+
+/* --- TECHNOLOGY DATA PANEL UPGRADE --- */
+.support-panel--tech {
+  background: var(--paper-strong);
+  border-left: 4px solid var(--gold); /* Adds a strong 'Gold' vertical anchor */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adds a subtle 'Digital Grid' watermark to the background of the card */
+.support-panel--tech::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* --- SUBPAGE HERO TEXT BALANCE FIX --- */
+.solutions-hero-realigned h1 {
+  max-width: 22ch; /* Removes the strict 10ch chokehold so it can spread wider */
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem); /* Scales the text down slightly to balance with the image */
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure the subtext below it also breathes properly */
+.solutions-hero-realigned .section-lead {
+  font-size: 1.15rem;
+  max-width: 45ch; 
+}
+/* --- BEEFIER OUTCOMES --- */
+.feature-media .contact-flow article {
+  padding: 1.5rem 0; /* More vertical breathing room */
+  gap: 1.5rem; /* Wider gap between number and text */
+}
+
+.feature-media .contact-flow article span {
+  width: 3rem; /* Bigger number icons */
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.feature-media .contact-flow article p {
+  font-size: 1.15rem; /* Larger, more readable outcome text */
+  line-height: 1.5;
+}
+
+/* --- DARK BAND REFINEMENTS --- */
+.band-dark .section-header-stacked {
+  margin-bottom: 3.5rem; /* Pushes the header away from the list slightly more */
+}
+
+.band-dark .section-lead {
+  color: rgba(255, 255, 255, 0.85); /* Brightens the sub-text for better readability on dark */
+  font-size: 1.2rem; /* Gives it a bit more presence so it doesn't feel 'lost' */
+  line-height: 1.6;
+}
+
+/* Ensures the 3-column process list stretches to fill the whole card */
+.process-list--three {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 5rem; /* Drastically increased for breathing room */
+  margin-top: 3.5rem; /* Separates the list from the heavy headline */
+}
+
+/* Ensure the titles in these specific dark steps pop */
+.band-dark .process-step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-list--three .process-step {
+  padding-right: 1.5rem; /* Prevents text from crowding the next column */
+}
+
+/* --- DIGITAL ACCENT FOR TECHNOLOGY CARDS --- */
+[data-page="solutions"] .outline-card {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-page="solutions"] .outline-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(var(--gold) 1px, transparent 1px);
+  background-size: 10px 10px;
+  opacity: 0.15; /* Extremely subtle technical grid in the top corner */
+  pointer-events: none;
+}
+/* --- TECH-SPECIFIC SCANNABILITY --- */
+.support-panel .clean-list li strong {
+  color: var(--gold) !important; /* Forces the headers to your brand Gold */
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* --- EXECUTIVE ENGAGEMENT SHOWCASE --- */
+.engagement-showcase {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* 1. The Scholarship (Featured) */
+.tier-featured {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3.5rem;
+  background: var(--paper-strong);
+  border: 1px solid var(--gold); /* Gold anchor for the primary tier */
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.tier-featured h3 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tier-featured p {
+  font-size: 1.15rem;
+  max-width: 45ch;
+}
+
+/* 2. The Supporting Tracks Grid */
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ai-partner-strip {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.tier-track {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold); /* Top anchor for alignment */
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+.tier-track:hover {
+  background: white;
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: var(--shadow-tight);
+}
+
+.tier-track strong {
+  display: block;
+  font-family: "Newsreader", serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--ink);
+}
+
+/* --- FINAL CTA SIDEBAR REFINEMENT --- */
+.cta-sidebar-card {
+  min-width: 340px;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.04); /* Extremely subtle ghost-white background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  display: grid;
+  gap: 1.2rem;
+  align-self: center; /* Keeps it perfectly centered against the big headline */
+}
+
+.cta-sidebar-card strong {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.cta-sidebar-card .clean-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.2rem;
+  padding: 0.8rem 0;
+  border: none; /* Removes the distracting lines */
+}
+
+/* Update this existing rule in your styles.css */
+.cta-panel--dark h2, 
+.cta-panel--dark h3, /* Add this line to force headings to white */
+.cta-panel--dark p {
+  color: var(--white);
+}
+
+/* Add this to ensure the process titles in the dark panel are crisp */
+.cta-panel--dark .process-step h3 {
+  color: var(--white);
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.band-dark .process-step span,
+.cta-panel--dark .process-step span {
+  background: var(--gold) !important; /* Gold circle */
+  color: var(--ink) !important; /* Dark number for contrast */
+  font-weight: 900;
+}
+.cta-sidebar-card .clean-list li span {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: rgba(215, 164, 91, 0.15); /* Gold tint */
+  color: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.cta-sidebar-card .clean-list li strong {
+  display: block;
+  color: white;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cta-sidebar-card .clean-list li p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6) !important;
+  line-height: 1.4;
+}
+
+/* --- CEO PROFILE REFINEMENTS --- */
+.ceo-meta {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.ceo-meta span {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(124, 45, 31, 0.06); /* Brand Maroon with light opacity */
+  color: var(--brand); /* Brand Maroon */
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 45, 31, 0.1);
+}
+
+/* --- CEO Narrative Flow --- */
+.contact-flow article {
+  display: flex;
+  align-items: start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-flow article span {
+  font-family: "DMSans-ExtraBold", sans-serif;
+  font-size: 2rem;
+  color: var(--gold); /* Brand Gold */
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.contact-flow article strong {
+  display: block;
+  font-family: "Newsreader", serif;
+  font-size: 1.25rem;
+  color: var(--ink); /* Brand Ink */
+  margin-bottom: 0.4rem;
+}
+
+.contact-flow article p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink-light);
+}
+
+/* --- CEO BIO TIMELINE REFINEMENT --- */
+.bio-timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--gold); /* Vertical gold line replaces the circles */
+  display: grid;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+/* Adds a small gold dot at the start of each milestone */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 5px);
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+.timeline-item strong {
+  display: block;
+  font-family: "Newsreader", serif;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+/* --- CONVICTION CALLOUT (Space Filler) --- */
+.conviction-callout {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(124, 45, 31, 0.04); /* Very faint brand-colored wash */
+  border-left: 3px solid var(--brand);
+  border-radius: 0 8px 8px 0;
+}
+
+.conviction-callout p {
+  font-family: "Newsreader", serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--brand) !important;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.conviction-callout footer {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* --- BOARDROOM INFLUENCE TAGS --- */
+.process-list--influence .process-step span {
+  width: auto;
+  padding: 0 0.8rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Gold for high-prestige awards */
+.tag-award {
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+}
+
+/* Brand Maroon for Board leadership */
+.tag-board {
+  background: var(--brand) !important;
+  color: var(--white) !important;
+}
+
+/* Muted grey/ink for Memberships & Volunteering */
+.tag-community {
+  background: var(--muted) !important;
+  color: var(--white) !important;
+  opacity: 0.8;
+}
+/* Fixes the process grid for the Trophy Case */
+.process-list--eight .process-step span {
+  width: auto;
+  padding: 0 0.8rem;
+  border-radius: 4px;
+  background: var(--gold);
+  color: var(--ink);
+  text-transform: uppercase;
+}
+
+/* --- DARK GALLERY BOARDROOM --- */
+.trophy-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns of Influence */
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.trophy-item {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03); /* Ghostly white background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.trophy-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--gold); /* Gold highlight on hover */
+  transform: translateY(-5px); /* Lifts like a premium card */
+}
+
+.trophy-item h3 {
+  color: var(--white) !important;
+  font-family: "Newsreader", serif;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.trophy-item p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6) !important; /* Muted subtext for depth */
+}
+
+/* --- NARRATIVE DEEP DIVE CARDS --- */
+.narrative-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the 'Read More' link to the bottom */
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.narrative-card h3 {
+  font-family: "Newsreader", serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--ink);
+}
+
+.narrative-card p:not(.eyebrow) {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--muted);
+  flex-grow: 1; /* Ensures text takes up the necessary space */
+}
+
+.narrative-card .card-action {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(124, 45, 31, 0.1); /* Subtle brand-colored line */
+}
+
+.narrative-card:hover {
+  transform: translateY(-8px);
+  background-color: var(--white) !important; /* Turns white for a 'lifted' effect */
+  box-shadow: 0 25px 50px rgba(124, 45, 31, 0.08);
+}
+
+/* --- TROPHY TAGS --- */
+.trophy-item span {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 4px;
+}
+
+
+
+
+.tag-gold { background: var(--gold); color: var(--ink); } /* High contrast for Awards */
+.tag-ghost { border: 1px solid var(--gold); color: var(--gold); } /* Elegant outline for Boards */
+.tag-subtle { background: rgba(255, 255, 255, 0.15); color: var(--white); } /* Muted for Community */
+/* --- ABOUT US: 8-ITEM GRID REFINEMENT --- */
+.process-list--eight {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 columns (2 rows of 4) */
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+/* styles.css - Add at the end of the Hero section */
+body[data-page="ceo"] .editorial-hero .media-frame--hero {
+  max-height: 500px; /* Caps the vertical growth of the abstract cube image */
+  aspect-ratio: 3 / 2; /* A slightly slimmer editorial ratio */
+}
+
+body[data-page="ceo"] .editorial-hero-grid {
+  align-items: flex-end; /* Anchors the text to the bottom of the image line for a modern look */
+  padding-bottom: 2rem;
+}
+
+/* --- CEO DEEP DIVE HERO FIX --- */
+
+/* 1. Reset the grid to the top and fix the invalid comment syntax */
+body[data-page="ceo"] .editorial-hero-grid {
+  align-items: flex-start !important;
+  gap: 5rem;
+  padding-bottom: 0;
+}
+
+/* 2. Zero out the image container's top margin */
+body[data-page="ceo"] .hero-visual {
+  margin-top: 0 !important;
+}
+
+/* 3. Scale the image down to a professional editorial size */
+body[data-page="ceo"] .editorial-hero .media-frame--hero {
+  max-height: 440px; /* Reduced from 500px to fix 'too big' issue */
+  aspect-ratio: 1 / 1; 
+  width: auto;
+}
+
+/* 4. Align the eyebrow text to the visual top of the image */
+body[data-page="ceo"] .hero-copy {
+  /* A tiny 0.4rem nudge is usually enough to align the 
+     visual 'cap height' of the font with the image edge */
+  padding-top: 1.0rem !important; 
+}
+
+body[data-page="ceo"] .hero-copy .eyebrow {
+  margin-top: 0 !important;
+  line-height: 1; /* Ensures no extra leading pushes it down */
+}
+
+/* 5. Restore the trophy gallery grid that was broken by the error */
+.trophy-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* --- TWO COLUMN SECTION ALIGNMENT --- */
+
+/* 1. Remove the margin that is pushing the cream box down */
+.page-section .support-panel {
+  margin-top: 0 !important;
+}
+
+/* 2. Synchronize the vertical start point of the text */
+/* This gives the left column the same 2.5rem top spacing as the right panel's internal padding */
+.page-section .two-column-layout .editorial-block {
+  padding-top: 2.5rem; 
+}
+
+/* 3. Ensure the eyebrow margin is consistent across both blocks */
+.editorial-block .eyebrow,
+.support-panel .eyebrow {
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important; /* Standardizes the gap to the H2 heading */
+}
+
+/* 4. Optical adjustment for the Newsreader serif font */
+/* Serif headlines often need a tiny nudge to look visually centered with clean sans-serif eyebrows */
+.editorial-block h2,
+.support-panel h2 {
+  margin-top: -0.2rem;
+}
+
+/* --- SCOPED VALUE PILLAR ALIGNMENT --- */
+
+/* Only affects the grid with this specific class */
+.value-pillar-grid {
+  grid-template-columns: 1fr 1fr !important; 
+  align-items: stretch !important; /* Forces cards to be same height */
+  gap: 2.5rem !important;
+}
+
+/* Only affects panels inside this specific grid */
+.value-pillar-grid .support-panel {
+  margin-top: 0 !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Resets any global editorial padding that might interfere */
+.value-pillar-grid .editorial-block {
+  padding-top: 0 !important;
+}
+
+/* --- SCOPED MISSION CENTERING --- */
+
+.mission-final-zone .section-header-stacked {
+  text-align: center;
+  justify-items: center; /* Centers the eyebrow and h2 in the grid */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-final-zone .section-lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-final-zone .list-columns {
+  justify-content: center; /* Centers the two cards together */
+  max-width: 1000px; /* Constrains the width so they don't drift too far apart */
+  margin: 3rem auto 0;
+}
+
+.mission-final-zone .outline-card {
+  text-align: left; /* Keeps the text inside the cards professional and readable */
+}
+
+/* --- ENHANCED CENTERED MISSION CARDS --- */
+
+/* --- REFINED MISSION CARD TINTS --- */
+
+.mission-final-zone .outline-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures the eyebrow is perfectly centered */
+  padding: 2.5rem 2rem;
+  border-top: 3px solid var(--gold);
+}
+
+.mission-final-zone .outline-card .eyebrow {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+
+/* Specific Gold Tint for keywords - Removing heavy bold */
+.mission-final-zone .outline-card p strong {
+  color: var(--gold) !important;
+  font-weight: 600; /* Medium weight: enough to be visible, but not 'bold' */
+  letter-spacing: 0.01em; /* Subtle spacing for that premium look */
+}
+
+/* Ensuring the main heading still feels authoritative but balanced */
+.mission-final-zone .outline-card strong:first-of-type {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+/* Optional: Softens the subtext slightly to make the gold keywords stand out more */
+.mission-final-zone .outline-card p:not(.eyebrow) {
+  max-width: 30ch;
+  line-height: 1.6;
+}
+
+/* --- ENHANCED PROOF STYLING --- */
+
+.gold-tint-list li strong {
+  color: var(--gold) !important;
+  font-weight: 600 !important;
+}
+
+/* Three-up Video Grid for Insights */
+.three-up-list .editorial-block {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.three-up-list .media-frame--video {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-tight);
+}
+
+/* Highlighting the 'Flyer' style Toolbelt list */
+.support-panel .clean-list li strong {
+  color: var(--gold) !important;
+}
+
+
+/* --- INSIGHTS: ENTERPRISE SECTION PERMANENT FIX --- */
+
+/* 1. Only use two columns on desktop screens (>1180px) */
+@media (min-width: 1181px) {
+  body[data-page="insights"] .enterprise-proof-zone .proof-stage {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 5.5rem;
+    align-items: flex-start; /* Aligns text to the top of the video */
+  }
+}
+
+/* 2. Fix the Video Scaling (Crucial for overlap) */
+/* This stops the video from forcing a 30rem height and overlapping text */
+body[data-page="insights"] .enterprise-proof-zone .media-frame--video {
+  min-height: auto !important; 
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+/* 3. Ensure the text column doesn't get squished */
+body[data-page="insights"] .enterprise-proof-zone .proof-stage-copy {
+  min-width: 0;
+}
+
+/* 4. Refined Gold Tint (Elegant, medium weight) */
+.enterprise-proof-zone .proof-stage-copy p strong,
+.enterprise-proof-zone .gold-tint-list li strong {
+  color: var(--gold) !important;
+  font-weight: 600 !important;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+/* 5. Clear separation for the list items */
+.enterprise-proof-zone .gold-tint-list li {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(23, 19, 17, 0.08);
+  margin-top: 0;
+}
+
+/* --- INSIGHTS HERO REFINEMENT --- */
+
+body[data-page="insights"] .insights-hero h1 {
+  /* Increases width from 10ch to 22ch to allow a 2-3 line layout */
+  max-width: 22ch !important; 
+  
+  /* Slightly smaller font size to keep the 'Insights' page feeling refined */
+  font-size: clamp(2.8rem, 4vw, 4.2rem); 
+  
+  /* Adds a tiny bit of extra breathing room between the letters */
+  letter-spacing: -0.02em; 
+  line-height: 1.1;
+}
+
+/* Centers the lead paragraph better under the wider headline */
+body[data-page="insights"] .insights-hero .section-lead {
+  max-width: 50ch;
+  margin-top: 1.5rem;
+}
+
+/* --- GRADUATED TRACK WARMTH (INSIGHTS) --- */
+
+/* 1. Nathan: Most Reduced Warmth (Cooler) */
+.video-nathan video {
+  filter: sepia(.05) saturate(.85) contrast(.85) !important;
+}
+
+/* 2. April: A Little Reduced Warmth (Medium) */
+.video-april video {
+  filter: sepia(0.15) saturate(1.08) contrast(1.03) !important;
+}
+
+/* 3. Strategic Foundation: Original Site Warmth (Highest) */
+.video-strategic video {
+  /* This matches your global .custom-video-wrapper setting */
+  filter: sepia(0.25) saturate(1.1) contrast(1.05) !important;
+}
+/* --- INSIGHTS: TECHNICAL TRACK CAPTION REFINEMENT --- */
+
+.three-up-list .editorial-block p strong {
+  color: var(--gold) !important;
+  font-weight: 600 !important; /* Medium weight for an elegant tint */
+  letter-spacing: 0.01em;
+}
+
+/* Optional: Subtle spacing tweak to match the 'Editorial' balance */
+.three-up-list .editorial-block .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+
+
+/* --- SCOPED ORIGIN PILLAR ALIGNMENT --- */
+
+.origin-pillar-grid {
+  grid-template-columns: 1fr 1fr !important; 
+  align-items: stretch !important;
+  gap: 2.5rem !important;
+}
+
+.origin-pillar-grid .support-panel {
+  margin-top: 0 !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixes the alignment for the internal eyebrow across both cards */
+.origin-pillar-grid .support-panel .eyebrow {
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+}
+/* On medium screens, go to 2 columns to maintain readability */
+@media (max-width: 1024px) {
+  .process-list--eight {
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of 4 */
+  }
+}
+
+/* --- SCOPED PROGRAM ACTION CARDS: LUXURIOUS & WIDE --- */
+
+/* 1. Widens the container to let the cards get big, while keeping gaps tight */
+.shell-wide.program-action-grid {
+  max-width: 1520px !important; 
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.5rem !important; /* Shrinks the empty space between cards */
+}
+
+/* 2. Styles the white card background and centers text */
+.program-action-grid .editorial-block {
+  background: var(--paper-strong);
+  padding: 1.8rem; /* Slightly larger padding for a premium, spacious card feel */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line) !important;
+  box-shadow: var(--shadow-tight);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.program-action-grid .editorial-block:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold) !important;
+  box-shadow: var(--shadow-soft);
+}
+
+/* 3. Flushes the video perfectly to the edges based on the new 1.8rem padding */
+.program-action-grid .media-frame--video {
+  margin: -1.8rem -1.8rem 0 -1.8rem; 
+  width: calc(100% + 3.6rem); 
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0; 
+  box-shadow: none; 
+}
+
+/* 4. Snaps the eyebrow tightly under the video and adds a small accent line */
+.program-action-grid .eyebrow {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.4rem !important; 
+  margin-bottom: 0.8rem !important; /* Slightly increased to give the quote room below the line */
+  font-size: 0.75rem;
+  padding-bottom: 0.6rem; /* The space between the eyebrow text and the new line */
+}
+
+/* Draws the actual small line under the eyebrow */
+.program-action-grid .eyebrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Keeps it perfectly dead-center */
+  width: 24px; /* The 'small' width of the line */
+  height: 2px; /* The thickness */
+  background-color: var(--gold); /* Uses your brand gold for a premium touch */
+}
+
+/* 5. The Quote: Widened so it doesn't look squished, keeps the bottom line */
+.program-action-grid .card-quote {
+  font-family: "Newsreader", serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink);
+  line-height: 1.45;
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(23, 19, 17, 0.1); /* The structural line */
+  max-width: 32ch; /* WIDENED so the text spreads horizontally */
+}
+
+/* 6. Formats the description and gold keywords */
+.program-action-grid p:last-of-type {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 36ch; /* WIDENED to fill the larger card nicely */
+}
+
+.program-action-grid p strong {
+  color: var(--gold) !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 1180px) {
+  .editorial-hero-grid,
+  .section-header-row,
+  .feature-layout,
+  .feature-layout--reverse,
+  .proof-stage,
+  .proof-stage--reverse,
+  .contact-stage,
+  .footer-grid,
+  .ceo-hero-grid,
+  .two-column-layout,
+  .cta-panel__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-layout--reverse .feature-media,
+  .proof-stage--reverse .proof-stage-media {
+    order: initial;
+  }
+
+  .feature-layout--reverse .feature-copy,
+  .proof-stage--reverse .proof-stage-copy {
+    order: initial;
+  }
+
+  .hero-capabilities,
+.solutions-overview,
+.three-up-list,
+.logo-wall,
+.process-list,
+.editorial-columns,
+.list-columns,
+.footer-links,
+.field-grid,
+.system-outline-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+  .ceo-portrait-row,
+  .ceo-hero-secondary,
+  .lane-row,
+  .value-row {
+    grid-template-columns: 1fr;
+  }
+
+  .process-list,
+  .process-list--three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    padding-top: 0.6rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 0.7rem);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    padding: 1rem;
+    background: rgba(251, 248, 243, 0.96);
+    border: 1px solid rgba(23, 19, 17, 0.08);
+    border-radius: 18px;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .nav-group {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .nav-trigger {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 2.8rem;
+  }
+
+  .nav-dropdown {
+    position: static;
+    min-width: 0;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: rgba(243, 238, 232, 0.92);
+  }
+
+  .nav-group.is-open .nav-dropdown {
+    display: grid;
+  }
+
+  .header-cta {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .editorial-hero {
+    padding-top: 7.6rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell,
+  .shell-wide,
+  .shell-narrow,
+  .band-shell,
+  .nav-shell {
+    width: min(calc(100% - 1rem), var(--shell));
+  }
+
+  .page-section,
+  .page-band {
+    padding: 4.5rem 0;
+  }
+
+  .band-shell,
+  .contact-form-panel,
+  .support-panel,
+  .cta-panel {
+    padding: 1.4rem;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 12vw, 4.3rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+.hero-capabilities,
+.solutions-overview,
+.three-up-list,
+.logo-wall,
+.process-list,
+.process-list--three,
+.editorial-columns,
+.list-columns,
+.footer-links,
+.field-grid,
+.system-outline-grid {
+  grid-template-columns: 1fr;
+}
+
+  .hero-capabilities article:not(:last-child) {
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .hero-media-note {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contact-flow article {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}

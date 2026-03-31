@@ -1,0 +1,58 @@
+{
+  "recommended_pages_to_build": [
+    "home",
+    "services",
+    "reviews",
+    "about",
+    "gallery",
+    "contact"
+  ],
+  "recommended_homepage_section_order": [
+    "hero_with_primary_cta",
+    "trust_bar___proof_strip",
+    "core_services_overview",
+    "why_choose_us",
+    "service_area_coverage",
+    "testimonials___review_themes",
+    "gallery_or_project_proof",
+    "lead_capture_section"
+  ],
+  "recommended_primary_cta": "Primary call CTA in hero and sticky header",
+  "recommended_design_direction_tags": [
+    "modern",
+    "professional",
+    "conversion-focused",
+    "spacious",
+    "brand-aligned",
+    "premium"
+  ],
+  "recommended_asset_priorities": [
+    "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+    "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+    "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg"
+  ],
+  "preserve_brand_elements": [
+    {
+      "type": "nav_labels",
+      "values": [
+        "What We Believe",
+        "Meet Our CEO",
+        "Strategy and Program Management",
+        "Leadership Development & Coaching",
+        "Team Development and Culture",
+        "Professional Development"
+      ]
+    }
+  ],
+  "avoid_patterns": [
+    "CTA patterns are sparse or inconsistent; the replacement site should make the next step more obvious.",
+    "Trust proof is weak on the current public footprint and should be intentionally strengthened.",
+    "icon-heavy sections"
+  ],
+  "suggested_content_emphasis": [
+    "WrightNow Solutions is a People Development Company Driving Career Growth",
+    "Our People Development Shapes Future Success",
+    "There appear to be usable visual trust assets for crew, trucks, equipment, or service imagery."
+  ],
+  "ready_for_codex_build": true
+}

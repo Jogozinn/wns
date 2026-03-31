@@ -1,0 +1,15 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Coaching session placeholder</title>
+  <desc id="desc">Editorial placeholder for a one-on-one coaching image.</desc>
+  <rect width="960" height="720" rx="40" fill="#F7F1EA"/>
+  <rect x="48" y="48" width="864" height="624" rx="30" fill="#FFFDF9" stroke="#DED3C6"/>
+  <rect x="98" y="98" width="356" height="524" rx="26" fill="#E7DACC"/>
+  <rect x="506" y="98" width="308" height="232" rx="26" fill="#8F1D20"/>
+  <rect x="506" y="368" width="308" height="254" rx="26" fill="#F1E2CB"/>
+  <circle cx="278" cy="248" r="88" fill="#FFF9F3"/>
+  <circle cx="674" cy="214" r="72" fill="#D8A14C"/>
+  <rect x="562" y="436" width="200" height="16" rx="8" fill="#221715"/>
+  <rect x="562" y="474" width="164" height="12" rx="6" fill="#5E544D"/>
+  <rect x="562" y="504" width="188" height="12" rx="6" fill="#5E544D"/>
+  <text x="98" y="628" fill="#6C615A" font-family="Manrope, Arial, sans-serif" font-size="26" font-weight="700">Coaching session placeholder</text>
+</svg>

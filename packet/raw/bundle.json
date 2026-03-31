@@ -1,0 +1,4033 @@
+{
+  "search_job": {
+    "business_name": "WrightNow Solutions",
+    "area": "Atlanta, GA",
+    "category": null,
+    "mode": "business_intelligence",
+    "toggles": {
+      "use_maps": true,
+      "use_directories": true,
+      "use_social": true,
+      "ingest_website": true,
+      "download_assets": true,
+      "preserve_brand": true,
+      "debug": true
+    },
+    "source_selection": [
+      "maps",
+      "directories",
+      "social",
+      "website"
+    ],
+    "filters": {}
+  },
+  "lead": {
+    "business_name": "WrightNow Solutions",
+    "category": "Maps",
+    "address": {
+      "street_address": "541 10th St NW #431",
+      "city": "Atlanta",
+      "state": "GA",
+      "postal_code": "30318",
+      "country": null,
+      "full_address": "541 10th St NW #431, Atlanta, GA 30318",
+      "is_partial": false
+    },
+    "phone": null,
+    "website_url": "https://wrightnowsolutions.com",
+    "maps_url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+    "review_count": null,
+    "rating": null,
+    "hours": [],
+    "social_links": [
+      {
+        "platform": "X",
+        "url": "https://x.com/WrNowSolutions"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/wrightnow-solutions"
+      }
+    ],
+    "source_confidence": {
+      "business_name": "high",
+      "phone": "low",
+      "website_url": "high",
+      "address": "high",
+      "rating": "low",
+      "review_count": "low"
+    },
+    "discovered_from": [
+      "maps",
+      "yelp",
+      "bbb",
+      "directory",
+      "facebook",
+      "instagram",
+      "website"
+    ],
+    "raw_source_blobs": [
+      {
+        "source_type": "maps",
+        "source_name": "Maps search results",
+        "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-maps-search",
+        "candidate_name": "WrightNow Solutions on Maps",
+        "accepted": true,
+        "score_contribution": 4,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-maps-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "website"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Maps",
+          "WrightNow Solutions on Maps",
+          "MapQuest"
+        ],
+        "phones": [],
+        "website_hints": [
+          "https://www.pinterest.com/mapquest/",
+          "https://www.crunchbase.com/organization/mapquest",
+          "https://en.wikipedia.org/wiki/MapQuest"
+        ],
+        "categories": [
+          "Maps",
+          "Website",
+          "Maps"
+        ]
+      },
+      {
+        "source_type": "yelp",
+        "source_name": "Yelp search results",
+        "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-yelp-search",
+        "candidate_name": "WrightNow Solutions on Yelp",
+        "accepted": true,
+        "score_contribution": 4,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-yelp-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Yelp",
+          "WrightNow Solutions on Yelp"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "Yelp"
+        ]
+      },
+      {
+        "source_type": "bbb",
+        "source_name": "Bbb search results",
+        "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-bbb-search",
+        "candidate_name": "WrightNow Solutions on Bbb",
+        "accepted": true,
+        "score_contribution": 4,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-bbb-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Bbb",
+          "WrightNow Solutions on Bbb",
+          "Search Again, No Results Found"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "BBB",
+          "Bbb"
+        ]
+      },
+      {
+        "source_type": "directory",
+        "source_name": "Directory search results",
+        "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-directory-search",
+        "candidate_name": "WrightNow Solutions on Directory",
+        "accepted": true,
+        "score_contribution": 4,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-directory-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Directory",
+          "WrightNow Solutions on Directory"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "Directory"
+        ]
+      },
+      {
+        "source_type": "facebook",
+        "source_name": "Facebook search results",
+        "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "social",
+        "query": "source-native-facebook-search",
+        "candidate_name": "WrightNow Solutions on Facebook",
+        "accepted": true,
+        "score_contribution": 3,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-facebook-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Facebook",
+          "WrightNow Solutions on Facebook"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "Facebook"
+        ]
+      },
+      {
+        "source_type": "instagram",
+        "source_name": "Instagram search results",
+        "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "social",
+        "query": "source-native-instagram-search",
+        "candidate_name": "WrightNow Solutions on Instagram",
+        "accepted": true,
+        "score_contribution": 3,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: source-native-instagram-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ],
+        "business_names": [
+          "WrightNow Solutions on Instagram",
+          "WrightNow Solutions on Instagram",
+          "Instagram"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "Instagram",
+          "Instagram"
+        ]
+      },
+      {
+        "source_type": "website",
+        "source_name": "Provided website",
+        "url": "https://wrightnowsolutions.com",
+        "adapter_name": "manual",
+        "query": "manual-input",
+        "candidate_name": "",
+        "accepted": true,
+        "score_contribution": 30,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: manual-input",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ],
+        "business_names": [
+          "WrightNow Solutions",
+          "WrightNow Solutions",
+          "WrightNow Solutions | People Development for a More Empowered Workforce"
+        ],
+        "phones": [],
+        "website_hints": [],
+        "categories": [
+          "Website",
+          "Imageobject",
+          "Webpage",
+          "Person",
+          "Article"
+        ]
+      }
+    ],
+    "enrichment_status": "ready_for_website_ingest",
+    "service_area": [
+      "Atlanta"
+    ],
+    "confidence_score": 68,
+    "source_breakdown": [
+      {
+        "source_type": "maps",
+        "source_name": "Maps search results",
+        "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-maps-search",
+        "candidate_name": "WrightNow Solutions on Maps",
+        "accepted": false,
+        "score_contribution": 4,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-maps-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "website"
+        ]
+      },
+      {
+        "source_type": "yelp",
+        "source_name": "Yelp search results",
+        "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-yelp-search",
+        "candidate_name": "WrightNow Solutions on Yelp",
+        "accepted": false,
+        "score_contribution": 4,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-yelp-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name"
+        ]
+      },
+      {
+        "source_type": "bbb",
+        "source_name": "Bbb search results",
+        "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-bbb-search",
+        "candidate_name": "WrightNow Solutions on Bbb",
+        "accepted": false,
+        "score_contribution": 4,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-bbb-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name"
+        ]
+      },
+      {
+        "source_type": "directory",
+        "source_name": "Directory search results",
+        "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+        "adapter_name": "directory",
+        "query": "source-native-directory-search",
+        "candidate_name": "WrightNow Solutions on Directory",
+        "accepted": false,
+        "score_contribution": 4,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-directory-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name"
+        ]
+      },
+      {
+        "source_type": "facebook",
+        "source_name": "Facebook search results",
+        "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "social",
+        "query": "source-native-facebook-search",
+        "candidate_name": "WrightNow Solutions on Facebook",
+        "accepted": false,
+        "score_contribution": 3,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-facebook-search",
+        "fetch_status": "failed",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ]
+      },
+      {
+        "source_type": "instagram",
+        "source_name": "Instagram search results",
+        "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "adapter_name": "social",
+        "query": "source-native-instagram-search",
+        "candidate_name": "WrightNow Solutions on Instagram",
+        "accepted": false,
+        "score_contribution": 3,
+        "rejection_reason": "not-in-winning-candidate",
+        "discovery_query": "Discovered via search query: source-native-instagram-search",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ]
+      },
+      {
+        "source_type": "website",
+        "source_name": "Provided website",
+        "url": "https://wrightnowsolutions.com",
+        "adapter_name": "manual",
+        "query": "manual-input",
+        "candidate_name": "",
+        "accepted": true,
+        "score_contribution": 30,
+        "rejection_reason": "",
+        "discovery_query": "Discovered via search query: manual-input",
+        "fetch_status": "ok",
+        "fields_found": [
+          "address",
+          "business_name",
+          "social_links"
+        ]
+      }
+    ],
+    "field_provenance": {
+      "business_name": [
+        {
+          "value": [
+            "WrightNow Solutions",
+            "WrightNow Solutions"
+          ],
+          "source_url": "https://wrightnowsolutions.com",
+          "confidence": "high",
+          "observed": true
+        }
+      ],
+      "phone": [],
+      "address": [
+        {
+          "value": [
+            {
+              "street_address": "541 10th St NW #431",
+              "city": "Atlanta",
+              "state": "GA",
+              "postal_code": "30318",
+              "country": null,
+              "full_address": "541 10th St NW #431, Atlanta, GA 30318",
+              "is_partial": false
+            },
+            {
+              "street_address": "541 10th St NW #431",
+              "city": "Atlanta",
+              "state": "GA",
+              "postal_code": "30318",
+              "country": null,
+              "full_address": "541 10th St NW #431, Atlanta, GA 30318",
+              "is_partial": false
+            }
+          ],
+          "source_url": "https://wrightnowsolutions.com",
+          "confidence": "high",
+          "observed": true
+        }
+      ],
+      "website": [],
+      "rating": [],
+      "review_count": [],
+      "social_links": [
+        {
+          "value": [
+            {
+              "platform": "X",
+              "url": "https://x.com/WrNowSolutions"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "https://www.linkedin.com/company/wrightnow-solutions"
+            },
+            {
+              "platform": "X",
+              "url": "https://x.com/WrNowSolutions"
+            }
+          ],
+          "source_url": "https://wrightnowsolutions.com",
+          "confidence": "low",
+          "observed": true
+        }
+      ]
+    },
+    "match_reasoning": [
+      "Name similarity contributed 40/40.",
+      "Location match contributed 20/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 2/10.",
+      "Selected candidate 'WrightNow Solutions' from 1 matching source records."
+    ],
+    "queries_attempted": [
+      "WrightNow Solutions",
+      "WrightNow Solutions Atlanta",
+      "WrightNow Solutions GA",
+      "WrightNow Solutions Atlanta, GA",
+      "WrightNow Solutions near me",
+      "WrightNow Solutions Atlanta reviews",
+      "WrightNow Solutions Atlanta contact",
+      "WrightNow Solutions GA reviews",
+      "WrightNow Solutions reviews",
+      "WrightNow Solutions contact",
+      "WrightNow Solutions Atlanta, GA official website",
+      "WrightNow Solutions Atlanta phone",
+      "WrightNow Solutions GA phone",
+      "WrightNow Solutions Atlanta address"
+    ],
+    "candidate_trace": [
+      {
+        "candidate_name": "WrightNow Solutions on Maps",
+        "adapter_names": [
+          "directory"
+        ],
+        "queries": [
+          "source-native-maps-search"
+        ],
+        "score": 48,
+        "accepted": false,
+        "source_urls": [
+          "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "maps"
+        ],
+        "score_contribution": {
+          "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA": 4
+        },
+        "reasons": [
+          "Name similarity contributed 33/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 4/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions on Yelp",
+        "adapter_names": [
+          "directory"
+        ],
+        "queries": [
+          "source-native-yelp-search"
+        ],
+        "score": 44,
+        "accepted": false,
+        "source_urls": [
+          "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "yelp"
+        ],
+        "score_contribution": {
+          "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA": 4
+        },
+        "reasons": [
+          "Name similarity contributed 33/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 0/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions on Bbb",
+        "adapter_names": [
+          "directory"
+        ],
+        "queries": [
+          "source-native-bbb-search"
+        ],
+        "score": 45,
+        "accepted": false,
+        "source_urls": [
+          "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "bbb"
+        ],
+        "score_contribution": {
+          "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA": 4
+        },
+        "reasons": [
+          "Name similarity contributed 34/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 0/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions on Directory",
+        "adapter_names": [
+          "directory"
+        ],
+        "queries": [
+          "source-native-directory-search"
+        ],
+        "score": 41,
+        "accepted": false,
+        "source_urls": [
+          "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "directory"
+        ],
+        "score_contribution": {
+          "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA": 4
+        },
+        "reasons": [
+          "Name similarity contributed 30/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 0/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions on Facebook",
+        "adapter_names": [
+          "social"
+        ],
+        "queries": [
+          "source-native-facebook-search"
+        ],
+        "score": 43,
+        "accepted": false,
+        "source_urls": [
+          "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "facebook"
+        ],
+        "score_contribution": {
+          "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA": 3
+        },
+        "reasons": [
+          "Name similarity contributed 30/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 2/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions on Instagram",
+        "adapter_names": [
+          "social"
+        ],
+        "queries": [
+          "source-native-instagram-search"
+        ],
+        "score": 43,
+        "accepted": false,
+        "source_urls": [
+          "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA"
+        ],
+        "source_types": [
+          "instagram"
+        ],
+        "score_contribution": {
+          "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA": 3
+        },
+        "reasons": [
+          "Name similarity contributed 30/40.",
+          "Location match contributed 5/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 2/10."
+        ],
+        "selection_reason": "lower score than selected candidate",
+        "rejection_reason": "lower cluster score"
+      },
+      {
+        "candidate_name": "WrightNow Solutions",
+        "adapter_names": [
+          "manual"
+        ],
+        "queries": [
+          "manual-input"
+        ],
+        "score": 68,
+        "accepted": true,
+        "source_urls": [
+          "https://wrightnowsolutions.com"
+        ],
+        "source_types": [
+          "website"
+        ],
+        "score_contribution": {
+          "https://wrightnowsolutions.com": 30
+        },
+        "reasons": [
+          "Name similarity contributed 40/40.",
+          "Location match contributed 20/20.",
+          "Phone consistency contributed 0/15.",
+          "Repeated mentions contributed 6/15.",
+          "Field coverage contributed 2/10."
+        ],
+        "selection_reason": "highest deterministic candidate score"
+      }
+    ]
+  },
+  "business_profile": {
+    "query": {
+      "business_name": "WrightNow Solutions",
+      "location": "Atlanta, GA",
+      "website_url": "https://wrightnowsolutions.com/",
+      "niche": null,
+      "mode": "business_intelligence",
+      "use_maps": true,
+      "use_directories": true,
+      "use_social": true,
+      "ingest_website": true,
+      "download_assets": true,
+      "preserve_brand": true,
+      "debug": true
+    },
+    "identity": {
+      "business_name": "WrightNow Solutions",
+      "normalized_name": "wrightnow solutions",
+      "location_query": "Atlanta, GA",
+      "city": "Atlanta",
+      "state": "GA",
+      "address": "541 10th St NW #431, Atlanta, GA 30318",
+      "address_parts": {
+        "street_address": "541 10th St NW #431",
+        "city": "Atlanta",
+        "state": "GA",
+        "postal_code": "30318",
+        "country": null,
+        "full_address": "541 10th St NW #431, Atlanta, GA 30318",
+        "is_partial": false
+      },
+      "categories": [
+        "Maps",
+        "Website",
+        "Yelp",
+        "BBB",
+        "Directory",
+        "Facebook",
+        "Instagram",
+        "Imageobject"
+      ],
+      "years_in_business": null
+    },
+    "contact": {
+      "primary_phone": null,
+      "website": "https://wrightnowsolutions.com",
+      "address": "541 10th St NW #431, Atlanta, GA 30318",
+      "address_parts": {
+        "street_address": "541 10th St NW #431",
+        "city": "Atlanta",
+        "state": "GA",
+        "postal_code": "30318",
+        "country": null,
+        "full_address": "541 10th St NW #431, Atlanta, GA 30318",
+        "is_partial": false
+      },
+      "hours": [],
+      "social_links": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/search/pages"
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/explore/search/keyword"
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/WrNowSolutions"
+        },
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.linkedin.com/company/wrightnow-solutions"
+        }
+      ]
+    },
+    "services": {
+      "core": [],
+      "secondary": [],
+      "specializations": []
+    },
+    "service_area": {
+      "primary_city": "Atlanta",
+      "nearby_cities": [],
+      "county_or_metro": [],
+      "raw_mentions": []
+    },
+    "trust_signals": [],
+    "reputation": {
+      "rating": null,
+      "review_count": null,
+      "review_themes": [],
+      "review_phrases": []
+    },
+    "assets": {
+      "logo_found": true,
+      "photos_found": true,
+      "team_photos_likely": true,
+      "equipment_or_service_imagery_found": false,
+      "social_presence_found": true,
+      "gallery_or_project_pages": []
+    },
+    "notes": [
+      "There appear to be usable visual trust assets for crew, trucks, equipment, or service imagery."
+    ],
+    "field_trace": [
+      {
+        "field": "business_name",
+        "value": "WrightNow Solutions",
+        "confidence": "high",
+        "sources": [
+          "https://wrightnowsolutions.com"
+        ]
+      },
+      {
+        "field": "website",
+        "value": "https://wrightnowsolutions.com",
+        "confidence": "high",
+        "sources": [
+          "https://wrightnowsolutions.com/"
+        ]
+      },
+      {
+        "field": "address",
+        "value": "541 10th St NW #431, Atlanta, GA 30318",
+        "confidence": "high",
+        "sources": [
+          "https://wrightnowsolutions.com"
+        ]
+      },
+      {
+        "field": "categories",
+        "value": [
+          "Maps",
+          "Website",
+          "Yelp",
+          "BBB",
+          "Directory",
+          "Facebook",
+          "Instagram",
+          "Imageobject"
+        ],
+        "confidence": "high",
+        "sources": [
+          "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+          "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+          "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+        ]
+      }
+    ],
+    "profile_quality": {
+      "tier": "Tier C / thin data",
+      "score": 34,
+      "reasoning": [
+        "Hard facts coverage contributed 16 points.",
+        "Service clarity contributed 0 points.",
+        "Trust signals contributed 0 points; review signals contributed 0 points.",
+        "Visual assets and social presence contributed 10 points.",
+        "Source consistency and traceability contributed 8 points.",
+        "Manual enrichment is likely worthwhile before using this profile as prompt material."
+      ]
+    },
+    "sources": [
+      {
+        "source_type": "maps",
+        "label": "Maps search results",
+        "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Maps",
+        "snippet": "Source-native maps search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "ok",
+        "notes": [
+          "Discovered via search query: source-native-maps-search"
+        ]
+      },
+      {
+        "source_type": "yelp",
+        "label": "Yelp search results",
+        "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Yelp",
+        "snippet": "Source-native yelp search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "failed",
+        "notes": [
+          "Discovered via search query: source-native-yelp-search",
+          "Fetch issue: Client error '403 Forbidden' for url 'https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+        ]
+      },
+      {
+        "source_type": "bbb",
+        "label": "Bbb search results",
+        "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Bbb",
+        "snippet": "Source-native bbb search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "ok",
+        "notes": [
+          "Discovered via search query: source-native-bbb-search"
+        ]
+      },
+      {
+        "source_type": "directory",
+        "label": "Directory search results",
+        "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Directory",
+        "snippet": "Source-native directory search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "failed",
+        "notes": [
+          "Discovered via search query: source-native-directory-search",
+          "Fetch issue: Client error '403 Forbidden' for url 'https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+        ]
+      },
+      {
+        "source_type": "facebook",
+        "label": "Facebook search results",
+        "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Facebook",
+        "snippet": "Source-native facebook search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "failed",
+        "notes": [
+          "Discovered via search query: source-native-facebook-search",
+          "Fetch issue: Client error '400 Bad Request' for url 'https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+        ]
+      },
+      {
+        "source_type": "instagram",
+        "label": "Instagram search results",
+        "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+        "title": "WrightNow Solutions on Instagram",
+        "snippet": "Source-native instagram search for WrightNow Solutions Atlanta, GA",
+        "fetch_status": "ok",
+        "notes": [
+          "Discovered via search query: source-native-instagram-search"
+        ]
+      },
+      {
+        "source_type": "website",
+        "label": "Provided website",
+        "url": "https://wrightnowsolutions.com",
+        "title": "https://wrightnowsolutions.com/",
+        "snippet": "",
+        "fetch_status": "ok",
+        "notes": [
+          "Discovered via search query: manual-input"
+        ]
+      }
+    ],
+    "raw_capture_metadata": {
+      "discovered_source_count": 7,
+      "fetched_page_count": 9,
+      "successful_fetch_count": 6,
+      "fetch_failures": [
+        "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+        "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+        "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA"
+      ],
+      "elapsed_ms": 39023,
+      "adapters_used": [
+        "bbb",
+        "directory",
+        "facebook",
+        "instagram",
+        "maps",
+        "website",
+        "yelp"
+      ],
+      "discovery_trace": [
+        {
+          "queries_attempted": [
+            "WrightNow Solutions",
+            "WrightNow Solutions Atlanta",
+            "WrightNow Solutions GA",
+            "WrightNow Solutions Atlanta, GA",
+            "WrightNow Solutions near me",
+            "WrightNow Solutions Atlanta reviews",
+            "WrightNow Solutions Atlanta contact",
+            "WrightNow Solutions GA reviews",
+            "WrightNow Solutions reviews",
+            "WrightNow Solutions contact",
+            "WrightNow Solutions Atlanta, GA official website",
+            "WrightNow Solutions Atlanta phone",
+            "WrightNow Solutions GA phone",
+            "WrightNow Solutions Atlanta address"
+          ],
+          "adapter_runs": [
+            {
+              "adapter": "search",
+              "queries_attempted": [
+                "WrightNow Solutions",
+                "WrightNow Solutions Atlanta",
+                "WrightNow Solutions GA",
+                "WrightNow Solutions Atlanta, GA",
+                "WrightNow Solutions near me",
+                "WrightNow Solutions Atlanta reviews",
+                "WrightNow Solutions Atlanta contact",
+                "WrightNow Solutions GA reviews"
+              ],
+              "request_log": [
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions near me",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions near me",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta reviews",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta reviews",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta contact",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta contact",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA reviews",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA reviews",
+                  "status": "empty",
+                  "result_count": "0"
+                }
+              ],
+              "candidates_found": [],
+              "rejected_candidates": [
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "duckduckgo-bot-challenge"
+                },
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "duckduckgo-bot-challenge"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "duckduckgo-bot-challenge"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions near me",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+near+me'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions near me",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+near+me&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta reviews",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+reviews'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta reviews",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+reviews&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta contact",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+contact'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta contact",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+contact&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA reviews",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+reviews'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA reviews",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+reviews&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                }
+              ]
+            },
+            {
+              "adapter": "directory",
+              "queries_attempted": [
+                "WrightNow Solutions site:g.page",
+                "WrightNow Solutions site:google.com/maps",
+                "WrightNow Solutions site:mapquest.com",
+                "WrightNow Solutions Atlanta site:g.page",
+                "WrightNow Solutions Atlanta site:google.com/maps",
+                "WrightNow Solutions Atlanta site:mapquest.com",
+                "WrightNow Solutions GA site:g.page",
+                "WrightNow Solutions GA site:google.com/maps",
+                "WrightNow Solutions site:yelp.com",
+                "WrightNow Solutions Atlanta site:yelp.com",
+                "WrightNow Solutions GA site:yelp.com",
+                "WrightNow Solutions Atlanta, GA site:yelp.com",
+                "WrightNow Solutions site:bbb.org",
+                "WrightNow Solutions Atlanta site:bbb.org",
+                "WrightNow Solutions GA site:bbb.org",
+                "WrightNow Solutions Atlanta, GA site:bbb.org",
+                "WrightNow Solutions site:yellowpages.com",
+                "WrightNow Solutions site:chamberofcommerce.com",
+                "WrightNow Solutions Atlanta site:yellowpages.com",
+                "WrightNow Solutions Atlanta site:chamberofcommerce.com",
+                "WrightNow Solutions GA site:yellowpages.com",
+                "WrightNow Solutions GA site:chamberofcommerce.com",
+                "WrightNow Solutions Atlanta, GA site:yellowpages.com",
+                "WrightNow Solutions Atlanta, GA site:chamberofcommerce.com"
+              ],
+              "request_log": [
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:mapquest.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:mapquest.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:mapquest.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:mapquest.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:g.page",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:google.com/maps",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "directory",
+                  "family": "maps",
+                  "query": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:yelp.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "directory",
+                  "family": "yelp",
+                  "query": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "status": "error",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:bbb.org",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "directory",
+                  "family": "bbb",
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:yellowpages.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:chamberofcommerce.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "directory",
+                  "family": "directory",
+                  "query": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+                  "status": "error",
+                  "result_count": "0"
+                }
+              ],
+              "candidates_found": [
+                {
+                  "query": "source-native-maps-search",
+                  "adapter_name": "directory",
+                  "source_name": "Maps",
+                  "source_type": "maps",
+                  "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Maps",
+                  "snippet": "Source-native maps search for WrightNow Solutions Atlanta, GA"
+                },
+                {
+                  "query": "source-native-yelp-search",
+                  "adapter_name": "directory",
+                  "source_name": "Yelp",
+                  "source_type": "yelp",
+                  "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Yelp",
+                  "snippet": "Source-native yelp search for WrightNow Solutions Atlanta, GA"
+                },
+                {
+                  "query": "source-native-bbb-search",
+                  "adapter_name": "directory",
+                  "source_name": "Bbb",
+                  "source_type": "bbb",
+                  "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Bbb",
+                  "snippet": "Source-native bbb search for WrightNow Solutions Atlanta, GA"
+                },
+                {
+                  "query": "source-native-directory-search",
+                  "adapter_name": "directory",
+                  "source_name": "Directory",
+                  "source_type": "directory",
+                  "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Directory",
+                  "snippet": "Source-native directory search for WrightNow Solutions Atlanta, GA"
+                }
+              ],
+              "rejected_candidates": [
+                {
+                  "query": "WrightNow Solutions site:g.page",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Ag.page'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:g.page",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Ag.page&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions site:google.com/maps",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Agoogle.com%2Fmaps'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:google.com/maps",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Agoogle.com%2Fmaps&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions site:mapquest.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Amapquest.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:mapquest.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Amapquest.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:g.page",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Ag.page'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:g.page",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Ag.page&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:google.com/maps",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Agoogle.com%2Fmaps'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:google.com/maps",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Agoogle.com%2Fmaps&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:mapquest.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Amapquest.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:mapquest.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Amapquest.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:g.page",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Ag.page'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:g.page",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Ag.page&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:google.com/maps",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Agoogle.com%2Fmaps'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:google.com/maps",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Agoogle.com%2Fmaps&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions site:yelp.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Ayelp.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:yelp.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Ayelp.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:yelp.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Ayelp.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:yelp.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Ayelp.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:yelp.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Ayelp.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:yelp.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Ayelp.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:yelp.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ayelp.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:yelp.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ayelp.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "reason": "source-native-error:Client error '403 Forbidden' for url 'https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:bbb.org",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Abbb.org'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:bbb.org",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Abbb.org&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:bbb.org",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Abbb.org'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:bbb.org",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Abbb.org&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:bbb.org",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Abbb.org'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:bbb.org",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Abbb.org&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:bbb.org",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Abbb.org'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:bbb.org",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Abbb.org&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "reason": "pagination-or-search-self"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/privacy-policy",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/manage-cookies",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-a-quote",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/leave-a-review",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/file-a-complaint",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/account/register",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-listed",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-accredited",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/apply",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/business-resources",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/scamtracker/reportscam",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/scamtracker/lookupscam",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/about-bbb",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/bbb-directory",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "reason": "pagination-or-search-self"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-a-quote",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/leave-a-review",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/file-a-complaint",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/account/register",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-listed",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-accredited",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/apply",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/business-resources",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/scamtracker/reportscam",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/scamtracker/lookupscam",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/about-bbb",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/bbb-directory",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/search",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/search",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/search?find_country=USA&find_loc=Atlanta%2C+GA&find_text=WrightNow+Solutions",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-listed",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/heating-and-air-conditioning",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/roofing-contractors",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/home-builders",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/general-contractor",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/property-management",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/plumber",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/near-me/used-car-dealers",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/us/ga/memorial-square/news",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/scamtracker",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-accredited",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-listed",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-a-quote",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/leave-a-review",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/file-a-complaint",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-listed",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/get-accredited",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/apply",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/about-bbb",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/terms-of-use",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/all/privacy-policy",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+                  "url": "https://www.bbb.org/bbb-directory",
+                  "reason": "non-profile-bbb-page"
+                },
+                {
+                  "query": "WrightNow Solutions site:yellowpages.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Ayellowpages.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:yellowpages.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Ayellowpages.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions site:chamberofcommerce.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Achamberofcommerce.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:chamberofcommerce.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Achamberofcommerce.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:yellowpages.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Ayellowpages.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:yellowpages.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Ayellowpages.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:chamberofcommerce.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Achamberofcommerce.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:chamberofcommerce.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Achamberofcommerce.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:yellowpages.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Ayellowpages.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:yellowpages.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Ayellowpages.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:chamberofcommerce.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Achamberofcommerce.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:chamberofcommerce.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Achamberofcommerce.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:yellowpages.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ayellowpages.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:yellowpages.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ayellowpages.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:chamberofcommerce.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Achamberofcommerce.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:chamberofcommerce.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Achamberofcommerce.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+                  "reason": "source-native-error:Client error '403 Forbidden' for url 'https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                }
+              ]
+            },
+            {
+              "adapter": "social",
+              "queries_attempted": [
+                "WrightNow Solutions site:facebook.com",
+                "WrightNow Solutions Atlanta site:facebook.com",
+                "WrightNow Solutions GA site:facebook.com",
+                "WrightNow Solutions Atlanta, GA site:facebook.com",
+                "WrightNow Solutions",
+                "WrightNow Solutions Atlanta",
+                "WrightNow Solutions GA",
+                "WrightNow Solutions Atlanta, GA",
+                "WrightNow Solutions site:instagram.com",
+                "WrightNow Solutions Atlanta site:instagram.com",
+                "WrightNow Solutions GA site:instagram.com",
+                "WrightNow Solutions Atlanta, GA site:instagram.com",
+                "WrightNow Solutions",
+                "WrightNow Solutions Atlanta",
+                "WrightNow Solutions GA",
+                "WrightNow Solutions Atlanta, GA"
+              ],
+              "request_log": [
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:facebook.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "social",
+                  "family": "facebook",
+                  "query": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+                  "status": "error",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA site:instagram.com",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "duckduckgo",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "search",
+                  "backend": "brave",
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "status": "empty",
+                  "result_count": "0"
+                },
+                {
+                  "adapter": "social",
+                  "family": "instagram",
+                  "query": "https://www.instagram.com/explore/search/keyword/?q=WrightNow+Solutions+Atlanta%2C+GA",
+                  "status": "empty",
+                  "result_count": "0"
+                }
+              ],
+              "candidates_found": [
+                {
+                  "query": "source-native-facebook-search",
+                  "adapter_name": "social",
+                  "source_name": "Facebook",
+                  "source_type": "facebook",
+                  "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Facebook",
+                  "snippet": "Source-native facebook search for WrightNow Solutions Atlanta, GA"
+                },
+                {
+                  "query": "source-native-instagram-search",
+                  "adapter_name": "social",
+                  "source_name": "Instagram",
+                  "source_type": "instagram",
+                  "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+                  "title": "WrightNow Solutions on Instagram",
+                  "snippet": "Source-native instagram search for WrightNow Solutions Atlanta, GA"
+                }
+              ],
+              "rejected_candidates": [
+                {
+                  "query": "WrightNow Solutions site:facebook.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Afacebook.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:facebook.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Afacebook.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:facebook.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Afacebook.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:facebook.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Afacebook.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:facebook.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Afacebook.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:facebook.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Afacebook.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:facebook.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Afacebook.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:facebook.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Afacebook.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+                  "reason": "source-native-error:Client error '404 Not Found' for url 'https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+                },
+                {
+                  "query": "WrightNow Solutions site:instagram.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+site%3Ainstagram.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions site:instagram.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+site%3Ainstagram.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:instagram.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta+site%3Ainstagram.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta site:instagram.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta+site%3Ainstagram.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:instagram.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA+site%3Ainstagram.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA site:instagram.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA+site%3Ainstagram.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:instagram.com",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ainstagram.com'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA site:instagram.com",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA+site%3Ainstagram.com&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "duckduckgo-error:Client error '403 Forbidden' for url 'https://html.duckduckgo.com/html/?q=WrightNow+Solutions+Atlanta%2C+GA'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+                },
+                {
+                  "query": "WrightNow Solutions Atlanta, GA",
+                  "reason": "brave-error:Client error '429 Too Many Requests' for url 'https://search.brave.com/search?q=WrightNow+Solutions+Atlanta%2C+GA&source=web'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+                }
+              ]
+            }
+          ],
+          "accepted_sources": [
+            {
+              "url": "https://wrightnowsolutions.com",
+              "source_type": "website",
+              "reason": "manual-input"
+            },
+            {
+              "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+              "source_type": "maps",
+              "adapter_name": "directory",
+              "discovery_query": "source-native-maps-search",
+              "candidate_name": "WrightNow Solutions on Maps",
+              "source_name": "Maps",
+              "score_contribution": 4,
+              "score": 46
+            },
+            {
+              "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+              "source_type": "yelp",
+              "adapter_name": "directory",
+              "discovery_query": "source-native-yelp-search",
+              "candidate_name": "WrightNow Solutions on Yelp",
+              "source_name": "Yelp",
+              "score_contribution": 4,
+              "score": 44
+            },
+            {
+              "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+              "source_type": "bbb",
+              "adapter_name": "directory",
+              "discovery_query": "source-native-bbb-search",
+              "candidate_name": "WrightNow Solutions on Bbb",
+              "source_name": "Bbb",
+              "score_contribution": 4,
+              "score": 44
+            },
+            {
+              "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+              "source_type": "directory",
+              "adapter_name": "directory",
+              "discovery_query": "source-native-directory-search",
+              "candidate_name": "WrightNow Solutions on Directory",
+              "source_name": "Directory",
+              "score_contribution": 4,
+              "score": 44
+            },
+            {
+              "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+              "source_type": "facebook",
+              "adapter_name": "social",
+              "discovery_query": "source-native-facebook-search",
+              "candidate_name": "WrightNow Solutions on Facebook",
+              "source_name": "Facebook",
+              "score_contribution": 3,
+              "score": 40
+            },
+            {
+              "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+              "source_type": "instagram",
+              "adapter_name": "social",
+              "discovery_query": "source-native-instagram-search",
+              "candidate_name": "WrightNow Solutions on Instagram",
+              "source_name": "Instagram",
+              "score_contribution": 3,
+              "score": 40
+            }
+          ],
+          "rejected_sources": []
+        },
+        {
+          "source_type": "maps",
+          "url": "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA",
+          "label": "Maps search results",
+          "title": "WrightNow Solutions on Maps",
+          "snippet": "Source-native maps search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "medium",
+          "discovery_query": "source-native-maps-search",
+          "adapter_name": "directory",
+          "source_name": "Maps",
+          "confidence_contribution": 4
+        },
+        {
+          "source_type": "yelp",
+          "url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+          "label": "Yelp search results",
+          "title": "WrightNow Solutions on Yelp",
+          "snippet": "Source-native yelp search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "low",
+          "discovery_query": "source-native-yelp-search",
+          "adapter_name": "directory",
+          "source_name": "Yelp",
+          "confidence_contribution": 4
+        },
+        {
+          "source_type": "bbb",
+          "url": "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+          "label": "Bbb search results",
+          "title": "WrightNow Solutions on Bbb",
+          "snippet": "Source-native bbb search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "low",
+          "discovery_query": "source-native-bbb-search",
+          "adapter_name": "directory",
+          "source_name": "Bbb",
+          "confidence_contribution": 4
+        },
+        {
+          "source_type": "directory",
+          "url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+          "label": "Directory search results",
+          "title": "WrightNow Solutions on Directory",
+          "snippet": "Source-native directory search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "low",
+          "discovery_query": "source-native-directory-search",
+          "adapter_name": "directory",
+          "source_name": "Directory",
+          "confidence_contribution": 4
+        },
+        {
+          "source_type": "facebook",
+          "url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+          "label": "Facebook search results",
+          "title": "WrightNow Solutions on Facebook",
+          "snippet": "Source-native facebook search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "low",
+          "discovery_query": "source-native-facebook-search",
+          "adapter_name": "social",
+          "source_name": "Facebook",
+          "confidence_contribution": 3
+        },
+        {
+          "source_type": "instagram",
+          "url": "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA",
+          "label": "Instagram search results",
+          "title": "WrightNow Solutions on Instagram",
+          "snippet": "Source-native instagram search for WrightNow Solutions Atlanta, GA",
+          "confidence_hint": "low",
+          "discovery_query": "source-native-instagram-search",
+          "adapter_name": "social",
+          "source_name": "Instagram",
+          "confidence_contribution": 3
+        },
+        {
+          "source_type": "website",
+          "url": "https://wrightnowsolutions.com",
+          "label": "Provided website",
+          "title": "https://wrightnowsolutions.com/",
+          "snippet": "",
+          "confidence_hint": "high",
+          "discovery_query": "manual-input",
+          "adapter_name": "manual",
+          "source_name": "Manual input",
+          "confidence_contribution": 30
+        }
+      ],
+      "source_failure_report": [
+        {
+          "source_url": "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA",
+          "source_type": "yelp",
+          "failed_pages": [
+            "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+          ]
+        },
+        {
+          "source_url": "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA",
+          "source_type": "directory",
+          "failed_pages": [
+            "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA"
+          ]
+        },
+        {
+          "source_url": "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA",
+          "source_type": "facebook",
+          "failed_pages": [
+            "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA"
+          ]
+        }
+      ],
+      "website_ingest_attempted": true,
+      "website_ingest_status": "completed",
+      "website_page_count": 3,
+      "website_ingest_target": {
+        "provided_website_url": "https://wrightnowsolutions.com",
+        "resolved_canonical_website_url": "https://wrightnowsolutions.com",
+        "crawl_root_url": "https://wrightnowsolutions.com",
+        "allowed_domains": [
+          "rightnowsolutions.com",
+          "wrightnowsolutions.com",
+          "www.rightnowsolutions.com"
+        ],
+        "rejected_root_candidates": [
+          {
+            "url": "https://www.mapquest.com/search/results",
+            "classification": "search_results",
+            "reason": "not eligible as crawl root (search_results)",
+            "origin": "discovered:maps"
+          },
+          {
+            "url": "https://www.yelp.com/search",
+            "classification": "search_results",
+            "reason": "not eligible as crawl root (search_results)",
+            "origin": "discovered:yelp"
+          },
+          {
+            "url": "https://www.bbb.org/search",
+            "classification": "search_results",
+            "reason": "not eligible as crawl root (search_results)",
+            "origin": "discovered:bbb"
+          },
+          {
+            "url": "https://www.yellowpages.com/search",
+            "classification": "search_results",
+            "reason": "not eligible as crawl root (search_results)",
+            "origin": "discovered:directory"
+          },
+          {
+            "url": "https://www.facebook.com/search/pages",
+            "classification": "social_profile",
+            "reason": "not eligible as crawl root (social_profile)",
+            "origin": "discovered:facebook"
+          },
+          {
+            "url": "https://www.instagram.com/explore/search/keyword",
+            "classification": "social_profile",
+            "reason": "not eligible as crawl root (social_profile)",
+            "origin": "discovered:instagram"
+          },
+          {
+            "url": "https://www.pinterest.com/mapquest",
+            "classification": "canonical_website",
+            "reason": "user-provided website_url takes precedence",
+            "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+          },
+          {
+            "url": "https://www.crunchbase.com/organization/mapquest",
+            "classification": "canonical_website",
+            "reason": "user-provided website_url takes precedence",
+            "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/MapQuest",
+            "classification": "canonical_website",
+            "reason": "user-provided website_url takes precedence",
+            "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+          }
+        ]
+      },
+      "output_dir": null
+    }
+  },
+  "website_profile": {
+    "homepage_url": "https://wrightnowsolutions.com",
+    "provided_website_url": "https://wrightnowsolutions.com",
+    "resolved_canonical_website_url": "https://wrightnowsolutions.com",
+    "crawl_root_url": "https://wrightnowsolutions.com",
+    "allowed_domains": [
+      "rightnowsolutions.com",
+      "wrightnowsolutions.com",
+      "www.rightnowsolutions.com"
+    ],
+    "rejected_root_candidates": [
+      {
+        "url": "https://www.mapquest.com/search/results",
+        "classification": "search_results",
+        "reason": "not eligible as crawl root (search_results)",
+        "origin": "discovered:maps"
+      },
+      {
+        "url": "https://www.yelp.com/search",
+        "classification": "search_results",
+        "reason": "not eligible as crawl root (search_results)",
+        "origin": "discovered:yelp"
+      },
+      {
+        "url": "https://www.bbb.org/search",
+        "classification": "search_results",
+        "reason": "not eligible as crawl root (search_results)",
+        "origin": "discovered:bbb"
+      },
+      {
+        "url": "https://www.yellowpages.com/search",
+        "classification": "search_results",
+        "reason": "not eligible as crawl root (search_results)",
+        "origin": "discovered:directory"
+      },
+      {
+        "url": "https://www.facebook.com/search/pages",
+        "classification": "social_profile",
+        "reason": "not eligible as crawl root (social_profile)",
+        "origin": "discovered:facebook"
+      },
+      {
+        "url": "https://www.instagram.com/explore/search/keyword",
+        "classification": "social_profile",
+        "reason": "not eligible as crawl root (social_profile)",
+        "origin": "discovered:instagram"
+      },
+      {
+        "url": "https://www.pinterest.com/mapquest",
+        "classification": "canonical_website",
+        "reason": "user-provided website_url takes precedence",
+        "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+      },
+      {
+        "url": "https://www.crunchbase.com/organization/mapquest",
+        "classification": "canonical_website",
+        "reason": "user-provided website_url takes precedence",
+        "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/MapQuest",
+        "classification": "canonical_website",
+        "reason": "user-provided website_url takes precedence",
+        "origin": "website_hint:https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+      }
+    ],
+    "crawl_status": "completed",
+    "pages": [
+      {
+        "url": "https://wrightnowsolutions.com",
+        "page_type": "service",
+        "title": "WrightNow Solutions | People Development for a More Empowered Workforce",
+        "headings": [
+          "People Development for a More Empowered Workforce",
+          "Our Talent Development Programs Unlock the Potential of the Workforce Wright Now",
+          "WrightNow Solutions is a People Development Company Driving Career Growth",
+          "Our People Development Shapes Future Success",
+          "Client Testimonials That Inspire",
+          "Why WrightNow Solutions",
+          "Prioritize People Development Wright Now",
+          "The time to build future success is Wright Now. Contact us today to schedule a consultation.",
+          "Clients and Partners",
+          "Looking for insights?"
+        ],
+        "ctas": [
+          "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+        ],
+        "forms_present": false,
+        "text_excerpt": "WrightNow Solutions | People Development for a More Empowered Workforce Skip to content info@wrightnowsolutions.com About Us What We Believe Meet Our CEO Solutions Strategy and Program Management Leadership Development ...",
+        "assets": [
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "section_image",
+            "alt_text": null,
+            "file_type": "image/jpeg",
+            "width": 512,
+            "height": 694,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\eb041f404966.jpg",
+            "priority_score": 52.21,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "section_image",
+            "alt_text": null,
+            "file_type": "image/jpeg",
+            "width": 545,
+            "height": 605,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\c641b37b8011.jpg",
+            "priority_score": 51.19,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "section_image",
+            "alt_text": null,
+            "file_type": "image/jpeg",
+            "width": 650,
+            "height": 412,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\f94d3b2936d8.jpg",
+            "priority_score": 48.71,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "partner_logo",
+            "alt_text": "Group Logos",
+            "file_type": "image/jpeg",
+            "width": null,
+            "height": null,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\174bfe8ea1f5.jpg",
+            "priority_score": 22.0,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-3.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "partner_logo",
+            "alt_text": "Group Logos 3",
+            "file_type": "image/jpeg",
+            "width": null,
+            "height": null,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\7a8d8088b1e6.jpg",
+            "priority_score": 22.0,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-4.jpg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "partner_logo",
+            "alt_text": "Group Logos 4",
+            "file_type": "image/jpeg",
+            "width": null,
+            "height": null,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\6b5154ea8074.jpg",
+            "priority_score": 22.0,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 334,
+            "height": 112,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\logos\\06000839fe74.png",
+            "priority_score": 21.5,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 283,
+            "height": 91,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\logos\\dd4365bf369f.png",
+            "priority_score": 17.03,
+            "section_hint": "Follow Us"
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Strat-Icon.svg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "icon",
+            "alt_text": null,
+            "file_type": "image/svg+xml",
+            "width": 216,
+            "height": 216,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\3c0ce0aa007e.svg",
+            "priority_score": -63.13,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Leadership-Icon.svg",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "image",
+            "likely_role": "icon",
+            "alt_text": null,
+            "file_type": "image/svg+xml",
+            "width": 216,
+            "height": 216,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\a9f04cc605eb.svg",
+            "priority_score": -63.13,
+            "section_hint": null
+          },
+          {
+            "url": "https://player.vimeo.com/video/375417151?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=",
+            "source_page": "https://wrightnowsolutions.com",
+            "asset_type": "video_embed",
+            "likely_role": "embedded_video",
+            "alt_text": null,
+            "file_type": null,
+            "width": null,
+            "height": null,
+            "embed_provider": "Vimeo",
+            "local_path": null,
+            "priority_score": null,
+            "section_hint": null
+          }
+        ]
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "page_type": "service",
+        "title": "About Us - 2024 - WrightNow Solutions",
+        "headings": [
+          "WrightNow Solutions Prepares People for Long-Term Success as Their Professional&nbspGoals and Employment Opportunities Evolve Over Time",
+          "Our Core Values include the Following:",
+          "Looking for insights?",
+          "Follow Us",
+          "Contact"
+        ],
+        "ctas": [
+          "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+        ],
+        "forms_present": false,
+        "text_excerpt": "About Us - 2024 - WrightNow Solutions info@wrightnowsolutions.com About Us What We Believe Meet Our CEO Solutions Strategy and Program Management Leadership Development & Coaching Team Development and Culture Profession...",
+        "assets": [
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+            "asset_type": "image",
+            "likely_role": "section_image",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 1670,
+            "height": 942,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+            "priority_score": 62.0,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Team-Hands-Image-min-1.jpg",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+            "asset_type": "image",
+            "likely_role": "section_image",
+            "alt_text": null,
+            "file_type": "image/jpeg",
+            "width": 525,
+            "height": 389,
+            "embed_provider": null,
+            "local_path": "output\\wrightnow-solutions\\assets\\images\\ff1021362223.jpg",
+            "priority_score": 46.17,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 334,
+            "height": 112,
+            "embed_provider": null,
+            "local_path": null,
+            "priority_score": 21.5,
+            "section_hint": null
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 283,
+            "height": 91,
+            "embed_provider": null,
+            "local_path": null,
+            "priority_score": 17.03,
+            "section_hint": "Follow Us"
+          }
+        ]
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "page_type": "contact",
+        "title": "Contact Us - WrightNow Solutions",
+        "headings": [
+          "Work With Us",
+          "Looking for insights?",
+          "Follow Us",
+          "Contact"
+        ],
+        "ctas": [
+          "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+        ],
+        "forms_present": false,
+        "text_excerpt": "Contact Us - WrightNow Solutions info@wrightnowsolutions.com About Us What We Believe Meet Our CEO Solutions Strategy and Program Management Leadership Development & Coaching Team Development and Culture Professional De...",
+        "assets": [
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 334,
+            "height": 112,
+            "embed_provider": null,
+            "local_path": null,
+            "priority_score": 17.5,
+            "section_hint": "Work With Us"
+          },
+          {
+            "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+            "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+            "asset_type": "image",
+            "likely_role": "logo",
+            "alt_text": null,
+            "file_type": "image/png",
+            "width": 283,
+            "height": 91,
+            "embed_provider": null,
+            "local_path": null,
+            "priority_score": 17.03,
+            "section_hint": "Work With Us"
+          }
+        ]
+      }
+    ],
+    "detected_platform": "WordPress",
+    "brand_colors": [],
+    "fonts": [],
+    "nav_structure": [
+      "What We Believe",
+      "Meet Our CEO",
+      "Strategy and Program Management",
+      "Leadership Development & Coaching",
+      "Team Development and Culture",
+      "Professional Development",
+      "Technology Training",
+      "AI Career Accelerator",
+      "Learning Center",
+      "Contact Us",
+      "About Us",
+      "Solutions"
+    ],
+    "nav_links": [
+      {
+        "label": "What We Believe",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024"
+      },
+      {
+        "label": "Meet Our CEO",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/meet-our-ceo"
+      },
+      {
+        "label": "Strategy and Program Management",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/strategy-and-program-management"
+      },
+      {
+        "label": "Leadership Development & Coaching",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/leadership-development-coaching"
+      },
+      {
+        "label": "Team Development and Culture",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/team-development-and-culture"
+      },
+      {
+        "label": "Professional Development",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/professional-development"
+      },
+      {
+        "label": "Technology Training",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/technology-training"
+      },
+      {
+        "label": "AI Career Accelerator",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/ai-career-accelerator"
+      },
+      {
+        "label": "Learning Center",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/learning-center"
+      },
+      {
+        "label": "Contact Us",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us"
+      },
+      {
+        "label": "About Us",
+        "url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024"
+      },
+      {
+        "label": "Solutions",
+        "url": "https://wrightnowsolutions.com/solutions-2"
+      }
+    ],
+    "hero_structure": {
+      "heading": "People Development for a More Empowered Workforce",
+      "subheading": "WrightNow Solutions is an Atlanta-based people development company that helps upskill your workforce for career success. Schedule a consultation today.",
+      "primary_cta": null,
+      "ctas": [],
+      "hero_image": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png"
+    },
+    "primary_hero_image": {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "asset_type": "image",
+      "likely_role": "section_image",
+      "alt_text": null,
+      "file_type": "image/png",
+      "width": 1670,
+      "height": 942,
+      "embed_provider": null,
+      "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+      "priority_score": 62.0,
+      "section_hint": null
+    },
+    "cta_patterns": [
+      "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+    ],
+    "cta_analysis": {
+      "primary_cta": null,
+      "repeated_patterns": [
+        {
+          "label": "contact us",
+          "mentions": 1
+        }
+      ],
+      "missing_cta_areas": [
+        "Hero section does not surface a clear primary CTA.",
+        "Service sections explain the offer but do not reinforce the next step.",
+        "Contact-oriented sections are present but CTA reinforcement is thin."
+      ]
+    },
+    "service_sections": [
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "services",
+        "heading": "WrightNow Solutions is a People Development Company Driving Career Growth",
+        "body": "WrightNow partners with organizations to equip individuals with the essential skills needed to progress in business and entrepreneurship. Through our custom-built in-person workshops, virtual classrooms, and self-paced online courses, we empower students, employees, and executives with the technical, professional, and leadership skills to excel. Our action-oriented training leverages diverse voices in your workforce to boost engagement, productivity, and profitability for your organization. Take your organization to the next level by investing in comprehensive inclusive and workforce and career development programs with WrightNow . Consult with us to design and execute tailored programs for your organization. Learn More",
+        "body_excerpt": "WrightNow partners with organizations to equip individuals with the essential skills needed to progress in business and entrepreneurship. Through our custom-built in-person workshops, virtual classrooms, and self-paced online courses, we empower students, emp...",
+        "ctas": [],
+        "image_urls": [],
+        "order": 3
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "services",
+        "heading": "Our People Development Shapes Future Success",
+        "body": "Work With Us WrightNow starts with the strategy to determine how to best propel professionals at all levels of the talent lifecycle. We coach and train students, adult learners, veterans launching second careers in technical fields, early career professionals, and those striving to be successful in the executive ranks. Our training courses , professional development , and leadership development programs prepare the talent pipeline and enable proper succession planning for organizations. Our Training Approach Expert-Led Instruction: Industry professionals provide real-world insights. Comprehensive Curriculum: Participants benefit from our expertise in a wide range of topics, from emotional intelligence and conflict resolution to programming languages, cloud computing, and software certifications to project management, cybersecurity, and artificial intelligence best practices. Flexible Learning Options: Choose from in-person or virtual workshops or self-paced online courses to suit your schedule and learning style. Hands-On Experience: Apply theoretical knowledge to practical projects and real-world scenarios, ensuring you\u2019re ready to tackle challenges in your professional endeavors. \u201cThe WrightNow team hits the target every time! Getting to the heart of the matter in a professional, concise and engaging way. Just what I needed for my team.\u201d \u2013 Sherri Sims, Managing Director, Per Scholas \u201cIf your team needs to move the needle regarding becoming high-performance, WNS is an excellent option to jump-start your journey.\u201d \u2013 Irvin Bishop, Chief Information Officer \u201cThis was an incredibly practical and valuable workshop that made me much more confident not only in my strengths, but also in my ability to describe and overcome my professional weaknesses!\u201d \u2013 Winnie, Kennesaw State University Student",
+        "body_excerpt": "Work With Us WrightNow starts with the strategy to determine how to best propel professionals at all levels of the talent lifecycle. We coach and train students, adult learners, veterans launching second careers in technical fields, early career professionals...",
+        "ctas": [],
+        "image_urls": [
+          "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg"
+        ],
+        "order": 4
+      }
+    ],
+    "contact_block": {
+      "phones": [],
+      "emails": [
+        "info@wrightnowsolutions.com"
+      ],
+      "forms_present": false,
+      "calendaring_links": [],
+      "page_url": "https://wrightnowsolutions.com"
+    },
+    "testimonial_sections": [],
+    "logo_partner_sections": [],
+    "structured_sections": [
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "hero",
+        "heading": "People Development for a More Empowered Workforce",
+        "body": null,
+        "body_excerpt": null,
+        "ctas": [],
+        "image_urls": [],
+        "order": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "services",
+        "heading": "WrightNow Solutions is a People Development Company Driving Career Growth",
+        "body": "WrightNow partners with organizations to equip individuals with the essential skills needed to progress in business and entrepreneurship. Through our custom-built in-person workshops, virtual classrooms, and self-paced online courses, we empower students, employees, and executives with the technical, professional, and leadership skills to excel. Our action-oriented training leverages diverse voices in your workforce to boost engagement, productivity, and profitability for your organization. Take your organization to the next level by investing in comprehensive inclusive and workforce and career development programs with WrightNow . Consult with us to design and execute tailored programs for your organization. Learn More",
+        "body_excerpt": "WrightNow partners with organizations to equip individuals with the essential skills needed to progress in business and entrepreneurship. Through our custom-built in-person workshops, virtual classrooms, and self-paced online courses, we empower students, emp...",
+        "ctas": [],
+        "image_urls": [],
+        "order": 3
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "services",
+        "heading": "Our People Development Shapes Future Success",
+        "body": "Work With Us WrightNow starts with the strategy to determine how to best propel professionals at all levels of the talent lifecycle. We coach and train students, adult learners, veterans launching second careers in technical fields, early career professionals, and those striving to be successful in the executive ranks. Our training courses , professional development , and leadership development programs prepare the talent pipeline and enable proper succession planning for organizations. Our Training Approach Expert-Led Instruction: Industry professionals provide real-world insights. Comprehensive Curriculum: Participants benefit from our expertise in a wide range of topics, from emotional intelligence and conflict resolution to programming languages, cloud computing, and software certifications to project management, cybersecurity, and artificial intelligence best practices. Flexible Learning Options: Choose from in-person or virtual workshops or self-paced online courses to suit your schedule and learning style. Hands-On Experience: Apply theoretical knowledge to practical projects and real-world scenarios, ensuring you\u2019re ready to tackle challenges in your professional endeavors. \u201cThe WrightNow team hits the target every time! Getting to the heart of the matter in a professional, concise and engaging way. Just what I needed for my team.\u201d \u2013 Sherri Sims, Managing Director, Per Scholas \u201cIf your team needs to move the needle regarding becoming high-performance, WNS is an excellent option to jump-start your journey.\u201d \u2013 Irvin Bishop, Chief Information Officer \u201cThis was an incredibly practical and valuable workshop that made me much more confident not only in my strengths, but also in my ability to describe and overcome my professional weaknesses!\u201d \u2013 Winnie, Kennesaw State University Student",
+        "body_excerpt": "Work With Us WrightNow starts with the strategy to determine how to best propel professionals at all levels of the talent lifecycle. We coach and train students, adult learners, veterans launching second careers in technical fields, early career professionals...",
+        "ctas": [],
+        "image_urls": [
+          "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg"
+        ],
+        "order": 4
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "general",
+        "heading": "Looking for insights?",
+        "body": "Learn More",
+        "body_excerpt": "Learn More",
+        "ctas": [],
+        "image_urls": [],
+        "order": 10
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "contact",
+        "heading": "Follow Us",
+        "body": "Looking for insights? Learn More Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+        "body_excerpt": "Looking for insights? Learn More Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+        "ctas": [],
+        "image_urls": [
+          "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png"
+        ],
+        "order": 11
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "section_type": "contact",
+        "heading": "Contact",
+        "body": "Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+        "body_excerpt": "Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+        "ctas": [],
+        "image_urls": [],
+        "order": 12
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "section_type": "general",
+        "heading": "Our Core Values include the Following:",
+        "body": "Integrity Compassion Diversity, Equity, Inclusion, and Belonging Social Impact Commitment to Purpose and People Collaboration Creativity & Innovation",
+        "body_excerpt": "Integrity Compassion Diversity, Equity, Inclusion, and Belonging Social Impact Commitment to Purpose and People Collaboration Creativity & Innovation",
+        "ctas": [],
+        "image_urls": [],
+        "order": 1
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "section_type": "hero",
+        "heading": "Work With Us",
+        "body": "info@wrightnowsolutions.com X X Looking for insights? Learn More Follow Us Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318 Copyright \u00a9 2024 WrightNow",
+        "body_excerpt": "info@wrightnowsolutions.com X X Looking for insights? Learn More Follow Us Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318 Copyright \u00a9 2024 WrightNow",
+        "ctas": [
+          "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+        ],
+        "image_urls": [
+          "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+          "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png"
+        ],
+        "order": 0
+      }
+    ],
+    "section_hierarchy": [
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 0,
+        "section_type": "hero",
+        "heading": "People Development for a More Empowered Workforce",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 3,
+        "section_type": "services",
+        "heading": "WrightNow Solutions is a People Development Company Driving Career Growth",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 4,
+        "section_type": "services",
+        "heading": "Our People Development Shapes Future Success",
+        "cta_count": 0,
+        "image_count": 1
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 10,
+        "section_type": "general",
+        "heading": "Looking for insights?",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 11,
+        "section_type": "contact",
+        "heading": "Follow Us",
+        "cta_count": 0,
+        "image_count": 1
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com",
+        "order": 12,
+        "section_type": "contact",
+        "heading": "Contact",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "order": 1,
+        "section_type": "general",
+        "heading": "Our Core Values include the Following:",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "order": 2,
+        "section_type": "general",
+        "heading": "Looking for insights?",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "order": 3,
+        "section_type": "contact",
+        "heading": "Follow Us",
+        "cta_count": 0,
+        "image_count": 1
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "order": 4,
+        "section_type": "contact",
+        "heading": "Contact",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "order": 0,
+        "section_type": "hero",
+        "heading": "Work With Us",
+        "cta_count": 1,
+        "image_count": 2
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "order": 1,
+        "section_type": "general",
+        "heading": "Looking for insights?",
+        "cta_count": 0,
+        "image_count": 0
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "order": 2,
+        "section_type": "contact",
+        "heading": "Follow Us",
+        "cta_count": 0,
+        "image_count": 1
+      },
+      {
+        "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+        "order": 3,
+        "section_type": "contact",
+        "heading": "Contact",
+        "cta_count": 0,
+        "image_count": 0
+      }
+    ],
+    "images": [
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+        "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 1670,
+        "height": 942,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+        "priority_score": 62.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 512,
+        "height": 694,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\eb041f404966.jpg",
+        "priority_score": 52.21,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 545,
+        "height": 605,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\c641b37b8011.jpg",
+        "priority_score": 51.19,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 650,
+        "height": 412,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\f94d3b2936d8.jpg",
+        "priority_score": 48.71,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Team-Hands-Image-min-1.jpg",
+        "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 525,
+        "height": 389,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\ff1021362223.jpg",
+        "priority_score": 46.17,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\174bfe8ea1f5.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-3.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos 3",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\7a8d8088b1e6.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-4.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos 4",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\6b5154ea8074.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "logo",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 334,
+        "height": 112,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\logos\\06000839fe74.png",
+        "priority_score": 21.5,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "logo",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 283,
+        "height": 91,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\logos\\dd4365bf369f.png",
+        "priority_score": 17.03,
+        "section_hint": "Follow Us"
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Strat-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\3c0ce0aa007e.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Leadership-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\a9f04cc605eb.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Team-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\fb4afb1443f8.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Pro-Icon-1.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\47a755202905.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Tech-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\65ed03a0c7cb.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      }
+    ],
+    "prioritized_assets": [
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+        "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 1670,
+        "height": 942,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+        "priority_score": 62.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 512,
+        "height": 694,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\eb041f404966.jpg",
+        "priority_score": 52.21,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 545,
+        "height": 605,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\c641b37b8011.jpg",
+        "priority_score": 51.19,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 650,
+        "height": 412,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\f94d3b2936d8.jpg",
+        "priority_score": 48.71,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Team-Hands-Image-min-1.jpg",
+        "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 525,
+        "height": 389,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\ff1021362223.jpg",
+        "priority_score": 46.17,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\174bfe8ea1f5.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-3.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos 3",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\7a8d8088b1e6.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-4.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "partner_logo",
+        "alt_text": "Group Logos 4",
+        "file_type": "image/jpeg",
+        "width": null,
+        "height": null,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\6b5154ea8074.jpg",
+        "priority_score": 22.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "logo",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 334,
+        "height": 112,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\logos\\06000839fe74.png",
+        "priority_score": 21.5,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "logo",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 283,
+        "height": 91,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\logos\\dd4365bf369f.png",
+        "priority_score": 17.03,
+        "section_hint": "Follow Us"
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Strat-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\3c0ce0aa007e.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Leadership-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\a9f04cc605eb.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Team-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\fb4afb1443f8.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Pro-Icon-1.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\47a755202905.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Tech-Icon.svg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "icon",
+        "alt_text": null,
+        "file_type": "image/svg+xml",
+        "width": 216,
+        "height": 216,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\65ed03a0c7cb.svg",
+        "priority_score": -63.13,
+        "section_hint": null
+      }
+    ],
+    "top_visual_assets": [
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+        "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/png",
+        "width": 1670,
+        "height": 942,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+        "priority_score": 62.0,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 512,
+        "height": 694,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\eb041f404966.jpg",
+        "priority_score": 52.21,
+        "section_hint": null
+      },
+      {
+        "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "image",
+        "likely_role": "section_image",
+        "alt_text": null,
+        "file_type": "image/jpeg",
+        "width": 545,
+        "height": 605,
+        "embed_provider": null,
+        "local_path": "output\\wrightnow-solutions\\assets\\images\\c641b37b8011.jpg",
+        "priority_score": 51.19,
+        "section_hint": null
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://player.vimeo.com/video/375417151?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=",
+        "source_page": "https://wrightnowsolutions.com",
+        "asset_type": "video_embed",
+        "likely_role": "embedded_video",
+        "alt_text": null,
+        "file_type": null,
+        "width": null,
+        "height": null,
+        "embed_provider": "Vimeo",
+        "local_path": null,
+        "priority_score": null,
+        "section_hint": null
+      }
+    ],
+    "downloadable_assets": [],
+    "social_links": [
+      {
+        "platform": "X",
+        "url": "https://x.com/WrNowSolutions"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/wrightnow-solutions"
+      }
+    ],
+    "seo_basics": {
+      "title": "WrightNow Solutions | People Development for a More Empowered Workforce",
+      "meta_description": "WrightNow Solutions is an Atlanta-based people development company that helps upskill your workforce for career success. Schedule a consultation today.",
+      "h1_count": 1,
+      "image_count": 21,
+      "images_with_alt": 3,
+      "internal_page_count": 3,
+      "canonical": "https://wrightnowsolutions.com/"
+    },
+    "content_quality_notes": [
+      "CTA patterns are sparse or inconsistent; the replacement site should make the next step more obvious.",
+      "Trust proof is weak on the current public footprint and should be intentionally strengthened."
+    ],
+    "trust_signal_notes": [],
+    "redesign_opportunities": [
+      "Standardize CTA language and repeat it across hero, service blocks, and contact sections."
+    ]
+  },
+  "redesign_brief": {
+    "preserve": [
+      "Keep the strongest current positioning idea, but rewrite it into a tighter conversion-first hero.",
+      "Reuse the parts of the existing site structure that align with actual service intent."
+    ],
+    "improve": [
+      "Create a clearer primary CTA system with one dominant action repeated throughout the site.",
+      "Add a credibility rail for certifications, badges, partner logos, or guarantees.",
+      "Add a cleaner estimate/contact capture experience with lower friction."
+    ],
+    "content_gaps": [
+      "Partner and certification proof appears missing or understated."
+    ],
+    "ux_conversion_gaps": [
+      "Current CTA repetition is weak or inconsistent.",
+      "Lead capture looks underpowered because a visible form flow was not detected."
+    ],
+    "suggested_site_map": [
+      "Home",
+      "Services",
+      "Reviews",
+      "About",
+      "Gallery",
+      "Contact"
+    ],
+    "suggested_section_order": [
+      "Hero with primary CTA",
+      "Trust bar / proof strip",
+      "Core services overview",
+      "Why choose us",
+      "Service area coverage",
+      "Testimonials / review themes",
+      "Gallery or project proof",
+      "Lead capture section"
+    ],
+    "suggested_visual_direction": [
+      "Modernize the current brand while keeping familiar trust cues."
+    ],
+    "messaging_improvements": [
+      "Tighten the value proposition around speed, trust, and service quality.",
+      "Replace vague claims with specific proof, guarantees, and local relevance.",
+      "Use customer language from repeated review themes instead of generic filler."
+    ],
+    "asset_reuse_plan": [
+      "Review current site imagery for reusable logo, crew, truck, project, and hero assets."
+    ],
+    "missing_assets": [],
+    "credibility_strategy": [
+      "Review proof",
+      "Service-area specificity",
+      "Visible contact methods"
+    ],
+    "lead_capture_strategy": [
+      "Primary call CTA in hero and sticky header",
+      "Secondary estimate form on homepage and contact page",
+      "Repeat CTA after services, proof, and service-area sections"
+    ]
+  },
+  "output_dir": null
+}

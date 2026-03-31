@@ -1,0 +1,204 @@
+[
+  {
+    "candidate_name": "WrightNow Solutions on Maps",
+    "adapter_names": [
+      "directory"
+    ],
+    "queries": [
+      "source-native-maps-search"
+    ],
+    "score": 48,
+    "accepted": false,
+    "source_urls": [
+      "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "maps"
+    ],
+    "score_contribution": {
+      "https://www.mapquest.com/search/results?query=WrightNow+Solutions+Atlanta%2C+GA": 4
+    },
+    "reasons": [
+      "Name similarity contributed 33/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 4/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions on Yelp",
+    "adapter_names": [
+      "directory"
+    ],
+    "queries": [
+      "source-native-yelp-search"
+    ],
+    "score": 44,
+    "accepted": false,
+    "source_urls": [
+      "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "yelp"
+    ],
+    "score_contribution": {
+      "https://www.yelp.com/search?find_desc=WrightNow+Solutions&find_loc=Atlanta%2C+GA": 4
+    },
+    "reasons": [
+      "Name similarity contributed 33/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 0/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions on Bbb",
+    "adapter_names": [
+      "directory"
+    ],
+    "queries": [
+      "source-native-bbb-search"
+    ],
+    "score": 45,
+    "accepted": false,
+    "source_urls": [
+      "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "bbb"
+    ],
+    "score_contribution": {
+      "https://www.bbb.org/search?find_country=USA&find_text=WrightNow+Solutions&find_loc=Atlanta%2C+GA": 4
+    },
+    "reasons": [
+      "Name similarity contributed 34/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 0/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions on Directory",
+    "adapter_names": [
+      "directory"
+    ],
+    "queries": [
+      "source-native-directory-search"
+    ],
+    "score": 41,
+    "accepted": false,
+    "source_urls": [
+      "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "directory"
+    ],
+    "score_contribution": {
+      "https://www.yellowpages.com/search?search_terms=WrightNow+Solutions&geo_location_terms=Atlanta%2C+GA": 4
+    },
+    "reasons": [
+      "Name similarity contributed 30/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 0/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions on Facebook",
+    "adapter_names": [
+      "social"
+    ],
+    "queries": [
+      "source-native-facebook-search"
+    ],
+    "score": 43,
+    "accepted": false,
+    "source_urls": [
+      "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "facebook"
+    ],
+    "score_contribution": {
+      "https://www.facebook.com/search/pages?q=WrightNow+Solutions+Atlanta%2C+GA": 3
+    },
+    "reasons": [
+      "Name similarity contributed 30/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 2/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions on Instagram",
+    "adapter_names": [
+      "social"
+    ],
+    "queries": [
+      "source-native-instagram-search"
+    ],
+    "score": 43,
+    "accepted": false,
+    "source_urls": [
+      "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA"
+    ],
+    "source_types": [
+      "instagram"
+    ],
+    "score_contribution": {
+      "https://www.instagram.com/explore/search/keyword?q=WrightNow+Solutions+Atlanta%2C+GA": 3
+    },
+    "reasons": [
+      "Name similarity contributed 30/40.",
+      "Location match contributed 5/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 2/10."
+    ],
+    "selection_reason": "lower score than selected candidate",
+    "rejection_reason": "lower cluster score"
+  },
+  {
+    "candidate_name": "WrightNow Solutions",
+    "adapter_names": [
+      "manual"
+    ],
+    "queries": [
+      "manual-input"
+    ],
+    "score": 68,
+    "accepted": true,
+    "source_urls": [
+      "https://wrightnowsolutions.com"
+    ],
+    "source_types": [
+      "website"
+    ],
+    "score_contribution": {
+      "https://wrightnowsolutions.com": 30
+    },
+    "reasons": [
+      "Name similarity contributed 40/40.",
+      "Location match contributed 20/20.",
+      "Phone consistency contributed 0/15.",
+      "Repeated mentions contributed 6/15.",
+      "Field coverage contributed 2/10."
+    ],
+    "selection_reason": "highest deterministic candidate score"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+  "page_type": "service",
+  "title": "About Us - 2024 - WrightNow Solutions",
+  "headings": [
+    "WrightNow Solutions Prepares People for Long-Term Success as Their Professional&nbspGoals and Employment Opportunities Evolve Over Time",
+    "Our Core Values include the Following:",
+    "Looking for insights?",
+    "Follow Us",
+    "Contact"
+  ],
+  "ctas": [
+    "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+  ],
+  "forms_present": false,
+  "text_excerpt": "About Us - 2024 - WrightNow Solutions info@wrightnowsolutions.com About Us What We Believe Meet Our CEO Solutions Strategy and Program Management Leadership Development & Coaching Team Development and Culture Profession...",
+  "assets": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "asset_type": "image",
+      "likely_role": "section_image",
+      "alt_text": null,
+      "file_type": "image/png",
+      "width": 1670,
+      "height": 942,
+      "embed_provider": null,
+      "local_path": "output\\wrightnow-solutions\\assets\\images\\d623c3e1b4f5.png",
+      "priority_score": 62.0,
+      "section_hint": null
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Team-Hands-Image-min-1.jpg",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "asset_type": "image",
+      "likely_role": "section_image",
+      "alt_text": null,
+      "file_type": "image/jpeg",
+      "width": 525,
+      "height": 389,
+      "embed_provider": null,
+      "local_path": "output\\wrightnow-solutions\\assets\\images\\ff1021362223.jpg",
+      "priority_score": 46.17,
+      "section_hint": null
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "asset_type": "image",
+      "likely_role": "logo",
+      "alt_text": null,
+      "file_type": "image/png",
+      "width": 334,
+      "height": 112,
+      "embed_provider": null,
+      "local_path": null,
+      "priority_score": 21.5,
+      "section_hint": null
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "asset_type": "image",
+      "likely_role": "logo",
+      "alt_text": null,
+      "file_type": "image/png",
+      "width": 283,
+      "height": 91,
+      "embed_provider": null,
+      "local_path": null,
+      "priority_score": 17.03,
+      "section_hint": "Follow Us"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Program design placeholder</title>
+  <desc id="desc">Editorial placeholder for a program design or planning image.</desc>
+  <rect width="960" height="720" rx="40" fill="#F5EFE8"/>
+  <rect x="48" y="48" width="864" height="624" rx="30" fill="#FFFDF9" stroke="#DDD0C2"/>
+  <rect x="96" y="98" width="768" height="180" rx="24" fill="#211715"/>
+  <rect x="96" y="316" width="246" height="260" rx="24" fill="#F1E2CB"/>
+  <rect x="378" y="316" width="246" height="260" rx="24" fill="#E7DACC"/>
+  <rect x="660" y="316" width="204" height="260" rx="24" fill="#8F1D20"/>
+  <rect x="144" y="146" width="204" height="16" rx="8" fill="#D8A14C"/>
+  <rect x="144" y="186" width="448" height="14" rx="7" fill="#FFF7EE"/>
+  <rect x="144" y="220" width="360" height="14" rx="7" fill="#FFF7EE" fill-opacity="0.72"/>
+  <text x="96" y="626" fill="#6C615A" font-family="Manrope, Arial, sans-serif" font-size="26" font-weight="700">Program design placeholder</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Strategy session placeholder</title>
+  <desc id="desc">Editorial placeholder for an organizational strategy session image.</desc>
+  <rect width="960" height="720" rx="40" fill="#F4EEE7"/>
+  <rect x="50" y="50" width="860" height="620" rx="30" fill="#FFFDF9" stroke="#DDD1C4"/>
+  <rect x="94" y="104" width="772" height="140" rx="24" fill="#221715"/>
+  <rect x="94" y="282" width="252" height="286" rx="24" fill="#F1E2CB"/>
+  <rect x="382" y="282" width="228" height="286" rx="24" fill="#E7DACC"/>
+  <rect x="646" y="282" width="220" height="286" rx="24" fill="#8F1D20"/>
+  <rect x="140" y="148" width="184" height="14" rx="7" fill="#D8A14C"/>
+  <rect x="140" y="182" width="402" height="12" rx="6" fill="#FFF7EE"/>
+  <rect x="140" y="210" width="332" height="12" rx="6" fill="#FFF7EE" fill-opacity="0.68"/>
+  <text x="94" y="618" fill="#6C615A" font-family="Manrope, Arial, sans-serif" font-size="26" font-weight="700">Strategy session placeholder</text>
+</svg>

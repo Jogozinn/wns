@@ -1,0 +1,192 @@
+{
+  "logos": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\logos\\06000839fe74.png",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/png",
+      "width": 334,
+      "height": 112,
+      "likely_role": "logo",
+      "priority_score": 21.5,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\logos\\dd4365bf369f.png",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/png",
+      "width": 283,
+      "height": 91,
+      "likely_role": "logo",
+      "priority_score": 17.03,
+      "reusable_for_redesign": true
+    }
+  ],
+  "hero_images": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/About-Us-Ceo-Image.png",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\d623c3e1b4f5.png",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "file_type": "image/png",
+      "width": 1670,
+      "height": 942,
+      "likely_role": "section_image",
+      "priority_score": 62.0,
+      "reusable_for_redesign": true
+    }
+  ],
+  "section_images": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image_opt.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\eb041f404966.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": 512,
+      "height": 694,
+      "likely_role": "section_image",
+      "priority_score": 52.21,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/Home-Image-2_opt.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\c641b37b8011.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": 545,
+      "height": 605,
+      "likely_role": "section_image",
+      "priority_score": 51.19,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\f94d3b2936d8.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": 650,
+      "height": 412,
+      "likely_role": "section_image",
+      "priority_score": 48.71,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Team-Hands-Image-min-1.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\ff1021362223.jpg",
+      "source_page": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "file_type": "image/jpeg",
+      "width": 525,
+      "height": 389,
+      "likely_role": "section_image",
+      "priority_score": 46.17,
+      "reusable_for_redesign": true
+    }
+  ],
+  "partner_logos": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\174bfe8ea1f5.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": null,
+      "height": null,
+      "likely_role": "partner_logo",
+      "priority_score": 22.0,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-3.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\7a8d8088b1e6.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": null,
+      "height": null,
+      "likely_role": "partner_logo",
+      "priority_score": 22.0,
+      "reusable_for_redesign": true
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Group-Logos-4.jpg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\6b5154ea8074.jpg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/jpeg",
+      "width": null,
+      "height": null,
+      "likely_role": "partner_logo",
+      "priority_score": 22.0,
+      "reusable_for_redesign": true
+    }
+  ],
+  "team_photos": [],
+  "videos": [
+    {
+      "url": "https://player.vimeo.com/video/375417151?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=",
+      "local_path": null,
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": null,
+      "width": null,
+      "height": null,
+      "likely_role": "embedded_video",
+      "priority_score": null,
+      "reusable_for_redesign": true
+    }
+  ],
+  "downloadable_assets": [],
+  "unknown_assets": [
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Strat-Icon.svg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\3c0ce0aa007e.svg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/svg+xml",
+      "width": 216,
+      "height": 216,
+      "likely_role": "icon",
+      "priority_score": -63.13,
+      "reusable_for_redesign": false
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Leadership-Icon.svg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\a9f04cc605eb.svg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/svg+xml",
+      "width": 216,
+      "height": 216,
+      "likely_role": "icon",
+      "priority_score": -63.13,
+      "reusable_for_redesign": false
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Team-Icon.svg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\fb4afb1443f8.svg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/svg+xml",
+      "width": 216,
+      "height": 216,
+      "likely_role": "icon",
+      "priority_score": -63.13,
+      "reusable_for_redesign": false
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Pro-Icon-1.svg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\47a755202905.svg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/svg+xml",
+      "width": 216,
+      "height": 216,
+      "likely_role": "icon",
+      "priority_score": -63.13,
+      "reusable_for_redesign": false
+    },
+    {
+      "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/Tech-Icon.svg",
+      "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\65ed03a0c7cb.svg",
+      "source_page": "https://wrightnowsolutions.com",
+      "file_type": "image/svg+xml",
+      "width": 216,
+      "height": 216,
+      "likely_role": "icon",
+      "priority_score": -63.13,
+      "reusable_for_redesign": false
+    }
+  ]
+}

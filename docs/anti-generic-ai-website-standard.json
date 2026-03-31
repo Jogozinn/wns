@@ -1,0 +1,165 @@
+{
+  "name": "anti_generic_ai_website_standard",
+  "purpose": "Hard constraints for future AI website generation, redesign, and review so pages do not look generic, templated, or obviously AI-generated.",
+  "core_principle": "If a section, component, image, or paragraph feels interchangeable with a generic business website, it fails.",
+  "rules": {
+    "layout": {
+      "banned": [
+        "Narrow centered layout with excessive side whitespace",
+        "Endless vertical stacking in the same repeated format",
+        "Same spacing rhythm on every section",
+        "Every section rendered as a rounded floating card",
+        "Overuse of template structures like hero, features, testimonials, CTA"
+      ],
+      "required": [
+        "Use a full-width system with desktop max width between 1320px and 1440px",
+        "Prefer grids over pure vertical stacking",
+        "Use asymmetry intentionally",
+        "Vary section rhythm and composition",
+        "Include at least one horizontal or split layout for every two sections"
+      ]
+    },
+    "sections": {
+      "banned": [
+        "Generic three-icon features blocks",
+        "Mission or vision sections with no practical value",
+        "Repeated card grids",
+        "Template sections added without a business reason"
+      ],
+      "required": [
+        "Each section must have a clear purpose",
+        "Each section must answer what the visitor gains from it",
+        "Approved section types include hero, proof, services, process, differentiator, audience/use cases, and conversion"
+      ]
+    },
+    "content": {
+      "banned_phrases": [
+        "We empower businesses",
+        "Cutting-edge solutions",
+        "Innovative approach",
+        "Transform your future",
+        "Seamless integration",
+        "World-class service",
+        "Results-driven excellence"
+      ],
+      "required": [
+        "Use specific, grounded language",
+        "State what the business does, for whom, and what result it creates",
+        "Every paragraph must contain a real action, outcome, or differentiator",
+        "Keep copy short and skimmable",
+        "Delete filler and clich\u00e9s"
+      ],
+      "test": "If the company name were removed, the copy should still point to this exact type of business."
+    },
+    "images": {
+      "banned": [
+        "Generic stock-style smiling team photos",
+        "Perfect staged corporate scenes with no context",
+        "Random filler imagery",
+        "Mismatched aspect ratios inside the same design system",
+        "Bad AI imagery with uncanny details"
+      ],
+      "required": [
+        "Every image must have a reason to exist",
+        "Use fewer, stronger images",
+        "Choose contextual images that support the message",
+        "Keep ratios intentional and consistent",
+        "Images should feel believable and aligned with the brand"
+      ]
+    },
+    "spacing_density": {
+      "banned": [
+        "Huge empty gaps",
+        "Overpadded cards",
+        "Tall sections with weak content",
+        "Whitespace used to fake sophistication"
+      ],
+      "required": [
+        "Keep section padding generally within 60px to 100px",
+        "Tighten internal spacing",
+        "Reduce empty space when it adds no value",
+        "Favor denser, higher-value layouts"
+      ]
+    },
+    "components": {
+      "banned": [
+        "Over-rounded UI everywhere",
+        "Heavy shadows on every surface",
+        "Glassmorphism without purpose",
+        "One repeated card style for every module",
+        "Decorative clutter"
+      ],
+      "required": [
+        "Keep border radius controlled, usually 8px to 16px",
+        "Use subtle shadows sparingly",
+        "Maintain a small consistent component system",
+        "Use one primary button style and one secondary style"
+      ]
+    },
+    "navigation": {
+      "banned": [
+        "Bare navigation with no hierarchy",
+        "No visible conversion path",
+        "Generic links only with no solution grouping"
+      ],
+      "required": [
+        "Reflect real business structure in nav",
+        "Use dropdowns when there are multiple service groups",
+        "Keep a visible primary CTA in the header",
+        "Transparent over hero is allowed only if readability remains strong"
+      ]
+    },
+    "page_length": {
+      "banned": [
+        "Long pages with repeated weak sections",
+        "Reworded duplicate messaging",
+        "Extra sections added just to make the site feel complete"
+      ],
+      "required": [
+        "Homepage should usually have 5 to 7 strong sections",
+        "Every section must add new value",
+        "Remove duplicates aggressively",
+        "Prefer one strong section over two average ones"
+      ]
+    },
+    "conversion": {
+      "banned": [
+        "Generic CTA text with no context",
+        "Conflicting CTA directions",
+        "Big CTA areas with weak motivation"
+      ],
+      "required": [
+        "CTA must say what happens next",
+        "CTA must connect to the visitor goal",
+        "Action should feel practical and low-friction"
+      ],
+      "example": "Book a 15-minute alignment call"
+    }
+  },
+  "approval_checklist": [
+    "Does this look like a template?",
+    "Could this belong to almost any company?",
+    "Is any section present only because AI tends to add it?",
+    "Does the page feel too clean, too safe, or too generic?",
+    "Are there stock-like images or filler copy weakening trust?",
+    "Is the page longer than necessary?",
+    "Does each section add distinct value?"
+  ],
+  "generation_constraints": [
+    "Do not generate generic business-site sections by default",
+    "Do not add filler sections to increase page length",
+    "Do not use stock-style placeholders unless approved",
+    "Do not write copy that could fit any business",
+    "Do not center everything in a narrow column",
+    "Do not overuse rounded cards, shadows, or oversized spacing",
+    "Do build with hierarchy, asymmetry, and real density",
+    "Do prioritize specificity over polish",
+    "Do remove weak sections instead of beautifying them",
+    "Do treat every page as a custom design"
+  ],
+  "modes": {
+    "builder": "Use as hard constraints during generation.",
+    "critic": "Use as rejection criteria and rewrite anything that fails.",
+    "audit": "Score layout originality, copy specificity, image relevance, section usefulness, conversion clarity, and overall non-generic feel."
+  }
+}

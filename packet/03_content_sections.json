@@ -1,0 +1,110 @@
+{
+  "pages": [
+    {
+      "page_url": "https://wrightnowsolutions.com",
+      "page_type": "service",
+      "page_title": "WrightNow Solutions | People Development for a More Empowered Workforce",
+      "ordered_sections": [
+        {
+          "section_type": "hero",
+          "heading": "People Development for a More Empowered Workforce",
+          "body": null,
+          "ctas": [],
+          "images": [],
+          "order": 0
+        },
+        {
+          "section_type": "services",
+          "heading": "WrightNow Solutions is a People Development Company Driving Career Growth",
+          "body": "WrightNow partners with organizations to equip individuals with the essential skills needed to progress in business and entrepreneurship. Through our custom-built in-person workshops, virtual classrooms, and self-paced online courses, we empower students, employees, and executives with the technical, professional, and leadership skills to excel. Our action-oriented training leverages diverse voices in your workforce to boost engagement, productivity, and profitability for your organization. Take your organization to the next level by investing in comprehensive inclusive and workforce and career development programs with WrightNow . Consult with us to design and execute tailored programs for your organization. Learn More",
+          "ctas": [],
+          "images": [],
+          "order": 3
+        },
+        {
+          "section_type": "services",
+          "heading": "Our People Development Shapes Future Success",
+          "body": "Work With Us WrightNow starts with the strategy to determine how to best propel professionals at all levels of the talent lifecycle. We coach and train students, adult learners, veterans launching second careers in technical fields, early career professionals, and those striving to be successful in the executive ranks. Our training courses , professional development , and leadership development programs prepare the talent pipeline and enable proper succession planning for organizations. Our Training Approach Expert-Led Instruction: Industry professionals provide real-world insights. Comprehensive Curriculum: Participants benefit from our expertise in a wide range of topics, from emotional intelligence and conflict resolution to programming languages, cloud computing, and software certifications to project management, cybersecurity, and artificial intelligence best practices. Flexible Learning Options: Choose from in-person or virtual workshops or self-paced online courses to suit your schedule and learning style. Hands-On Experience: Apply theoretical knowledge to practical projects and real-world scenarios, ensuring you\u2019re ready to tackle challenges in your professional endeavors. \u201cThe WrightNow team hits the target every time! Getting to the heart of the matter in a professional, concise and engaging way. Just what I needed for my team.\u201d \u2013 Sherri Sims, Managing Director, Per Scholas \u201cIf your team needs to move the needle regarding becoming high-performance, WNS is an excellent option to jump-start your journey.\u201d \u2013 Irvin Bishop, Chief Information Officer \u201cThis was an incredibly practical and valuable workshop that made me much more confident not only in my strengths, but also in my ability to describe and overcome my professional weaknesses!\u201d \u2013 Winnie, Kennesaw State University Student",
+          "ctas": [],
+          "images": [
+            {
+              "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/11/AdobeStock_671363450_opt.jpg",
+              "local_path": "output\\wrightnow-solutions\\packet\\assets\\images\\f94d3b2936d8.jpg"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "section_type": "general",
+          "heading": "Looking for insights?",
+          "body": "Learn More",
+          "ctas": [],
+          "images": [],
+          "order": 10
+        },
+        {
+          "section_type": "contact",
+          "heading": "Follow Us",
+          "body": "Looking for insights? Learn More Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+          "ctas": [],
+          "images": [
+            {
+              "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+              "local_path": "output\\wrightnow-solutions\\packet\\assets\\logos\\dd4365bf369f.png"
+            }
+          ],
+          "order": 11
+        },
+        {
+          "section_type": "contact",
+          "heading": "Contact",
+          "body": "Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318",
+          "ctas": [],
+          "images": [],
+          "order": 12
+        }
+      ]
+    },
+    {
+      "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/about-us-2024/",
+      "page_type": "service",
+      "page_title": "About Us - 2024 - WrightNow Solutions",
+      "ordered_sections": [
+        {
+          "section_type": "general",
+          "heading": "Our Core Values include the Following:",
+          "body": "Integrity Compassion Diversity, Equity, Inclusion, and Belonging Social Impact Commitment to Purpose and People Collaboration Creativity & Innovation",
+          "ctas": [],
+          "images": [],
+          "order": 1
+        }
+      ]
+    },
+    {
+      "page_url": "https://wrightnowsolutions.com/wrightnow-home-page/contact-us/",
+      "page_type": "contact",
+      "page_title": "Contact Us - WrightNow Solutions",
+      "ordered_sections": [
+        {
+          "section_type": "hero",
+          "heading": "Work With Us",
+          "body": "info@wrightnowsolutions.com X X Looking for insights? Learn More Follow Us Contact Email: info@wrightnowsolutions.com 541 10th St NW #431, Atlanta, GA 30318 Copyright \u00a9 2024 WrightNow",
+          "ctas": [
+            "Contact Us -> https://wrightnowsolutions.com/wrightnow-home-page/contact-us/"
+          ],
+          "images": [
+            {
+              "url": "https://wrightnowsolutions.com/wp-content/uploads/2019/10/Wright-Now-Solutions-Web-Logo-min.png",
+              "local_path": "output\\wrightnow-solutions\\packet\\assets\\logos\\06000839fe74.png"
+            },
+            {
+              "url": "https://wrightnowsolutions.com/wp-content/uploads/2024/06/cropped-9649b684ca2caddc28644ad24ff085cd.png",
+              "local_path": "output\\wrightnow-solutions\\packet\\assets\\logos\\dd4365bf369f.png"
+            }
+          ],
+          "order": 0
+        }
+      ]
+    }
+  ]
+}

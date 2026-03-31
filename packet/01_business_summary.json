@@ -1,0 +1,49 @@
+{
+  "business_name": "WrightNow Solutions",
+  "normalized_name": "wrightnow solutions",
+  "category": "People Development Company",
+  "address": "541 10th St NW #431, Atlanta, GA 30318",
+  "city": "Atlanta",
+  "state": "GA",
+  "postal_code": "30318",
+  "website_url": "https://wrightnowsolutions.com",
+  "emails": [
+    "info@wrightnowsolutions.com"
+  ],
+  "phones": [],
+  "social_links": [
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/search/pages"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/explore/search/keyword"
+    },
+    {
+      "platform": "X",
+      "url": "https://x.com/WrNowSolutions"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/wrightnow-solutions"
+    }
+  ],
+  "service_area": {
+    "primary_city": "Atlanta",
+    "nearby_cities": [],
+    "county_or_metro": []
+  },
+  "confidence_summary": {
+    "lead_confidence_score": 68,
+    "field_confidence": {
+      "business_name": "high",
+      "phone": "low",
+      "website_url": "high",
+      "address": "high",
+      "rating": "low",
+      "review_count": "low"
+    }
+  },
+  "business_description_summary": "WrightNow Solutions is an Atlanta-based people development company that helps upskill your workforce for career success. Schedule a consultation today."
+}
