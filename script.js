@@ -94,22 +94,10 @@ if (menuToggle && siteNav) {
 }
 
 syncHeaderState();
+requestAnimationFrame(() => {
+  document.body.classList.add("is-ready");
+});
 window.addEventListener("scroll", syncHeaderState, { passive: true });
-
-const pageName = document.body.dataset.page;
-
-document.querySelectorAll("[data-nav]").forEach((link) => {
-  if (link.dataset.nav === pageName) {
-    link.classList.add("is-active");
-    link.setAttribute("aria-current", "page");
-  }
-});
-
-navGroups.forEach((group) => {
-  if (group.querySelector("[aria-current='page']")) {
-    group.classList.add("has-active");
-  }
-});
 
 document.querySelectorAll(".site-nav a").forEach((link) => {
   link.addEventListener("click", () => {
@@ -126,41 +114,76 @@ document.querySelectorAll("[data-year]").forEach((node) => {
 const contactForm = document.querySelector("#contact-form");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+  const status = document.querySelector("[data-form-status]");
+  const submitButton = contactForm.querySelector("button[type='submit']");
 
-    const formData = new FormData(contactForm);
-    const name = String(formData.get("name") || "").trim();
-    const organization = String(formData.get("organization") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const focus = String(formData.get("focus") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-    const status = document.querySelector("[data-form-status]");
-
-    if (!name || !organization || !email || !focus || !message) {
-      if (status) {
-        status.textContent = "Please complete each field before continuing.";
-      }
+  const setFormStatus = (message, state = "") => {
+    if (!status) {
       return;
     }
 
-    const subject = encodeURIComponent(`WNS Contact Request - ${organization}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Organization: ${organization}`,
-        `Email: ${email}`,
-        `Primary focus: ${focus}`,
-        "",
-        "What needs to improve:",
-        message,
-      ].join("\n")
-    );
+    status.textContent = message;
+    status.classList.remove("is-success", "is-error", "is-pending");
 
-    if (status) {
-      status.textContent = "Opening your email client with a drafted message.";
+    if (state) {
+      status.classList.add(`is-${state}`);
+    }
+  };
+
+  contactForm.addEventListener("input", () => {
+    if (status && status.textContent) {
+      status.textContent = "";
+      status.classList.remove("is-success", "is-error", "is-pending");
+    }
+  });
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) {
+      setFormStatus("Please complete the required fields before submitting.", "error");
+      return;
     }
 
-    window.location.href = `mailto:info@wrightnowsolutions.com?subject=${subject}&body=${body}`;
+    const endpoint = contactForm.getAttribute("action") || "";
+
+    if (!endpoint || endpoint.includes("REPLACE_WITH_FORM_ID")) {
+      setFormStatus("Replace the Formspree placeholder ID before using this form.", "error");
+      return;
+    }
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.setAttribute("aria-busy", "true");
+    }
+
+    setFormStatus("Sending your request...", "pending");
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed.");
+      }
+
+      contactForm.reset();
+      setFormStatus("Thank you. Your request has been submitted and WNS will follow up soon.", "success");
+    } catch (error) {
+      setFormStatus(
+        "Your request could not be sent right now. Please try again or email info@wrightnowsolutions.com.",
+        "error"
+      );
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.removeAttribute("aria-busy");
+      }
+    }
   });
 }

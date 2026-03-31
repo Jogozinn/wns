@@ -281,6 +281,11 @@ body[data-page="home"] .hero-capabilities {
   box-shadow: var(--shadow-soft);
 }
 
+body:not(.is-ready) .nav-shell,
+body:not(.is-ready) .nav-dropdown {
+  transition: none !important;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -361,6 +366,22 @@ body[data-page="home"] .hero-capabilities {
 
 .nav-dropdown a:hover,
 .nav-dropdown a.is-active {
+  background: rgba(23, 19, 17, 0.05);
+}
+
+body[data-page="home"] .site-nav [data-nav="home"],
+body[data-page="contact"] .site-nav [data-nav="contact"],
+body[data-page="insights"] .site-nav [data-nav="insights"],
+body[data-page="solutions"] .site-nav .nav-trigger[data-nav="solutions"],
+body[data-page="about"] .site-nav .nav-trigger[data-nav="about"],
+body[data-page="about"] .site-nav .nav-dropdown [data-nav="about"],
+body[data-page="ceo"] .site-nav .nav-trigger[data-nav="about"],
+body[data-page="ceo"] .site-nav .nav-dropdown [data-nav="ceo"] {
+  color: var(--ink);
+}
+
+body[data-page="about"] .site-nav .nav-dropdown [data-nav="about"],
+body[data-page="ceo"] .site-nav .nav-dropdown [data-nav="ceo"] {
   background: rgba(23, 19, 17, 0.05);
 }
 
@@ -1158,6 +1179,24 @@ body[data-page="home"] .media-frame--hero img {
   font-size: 0.94rem;
 }
 
+.form-note.is-pending {
+  color: var(--muted);
+}
+
+.form-note.is-success {
+  color: var(--brand-deep);
+}
+
+.form-note.is-error {
+  color: var(--brand);
+}
+
+.contact-form button[disabled] {
+  cursor: wait;
+  opacity: 0.78;
+  transform: none;
+}
+
 .cta-panel {
   padding: 1.55rem 1.6rem;
   border: 0;
@@ -1361,6 +1400,42 @@ body[data-page="home"] .media-frame--hero img {
 .participant-proof .proof-stage-copy,
 .participant-proof .proof-stage-media {
   align-content: start;
+}
+
+.home-ceo-bridge {
+  padding-top: clamp(3.2rem, 4vw, 4rem);
+}
+
+.home-ceo-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 0.34fr) minmax(0, 0.66fr);
+  gap: clamp(2rem, 4vw, 3.25rem);
+  align-items: center;
+}
+
+.home-ceo-strip__media {
+  max-width: 18rem;
+  width: 100%;
+  justify-self: end;
+}
+
+.home-ceo-strip__media .media-frame {
+  min-height: 0;
+  box-shadow: var(--shadow-tight);
+}
+
+.home-ceo-strip__copy {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+}
+
+.home-ceo-strip__copy h2 {
+  max-width: 14ch;
+}
+
+.home-ceo-strip__copy p {
+  max-width: 60ch;
 }
 
 /* --- PREMIUM SPLIT CTA LAYOUT (FIXED) --- */
@@ -1918,6 +1993,59 @@ body[data-page="contact"] .contact-flow article p {
   margin-bottom: 1rem;
 }
 
+/* --- SCOPED HOME PAGE: OVERLAP FIXES --- */
+
+/* 1. Fix the Valarie CEO Section Overlap */
+.home-ceo-strip {
+  /* Re-balances the columns to give the text more breathing room */
+  grid-template-columns: 0.85fr 1.15fr !important; 
+  gap: 4.5rem !important; /* Forces a safe, wide distance between image and text */
+}
+
+.home-ceo-strip__copy,
+.home-ceo-strip__media {
+  /* CRITICAL: This is the magic line that stops CSS grid columns from overlapping */
+  min-width: 0 !important; 
+}
+
+.home-ceo-strip__copy h2 {
+  /* Widens the allowed text area so "Enterprise leadership" fits cleanly on a line */
+  max-width: 22ch !important; 
+  line-height: 1.05;
+}
+
+/* 2. Bulletproof the Mayor Video Section */
+body[data-page="home"] .home-proof .proof-stage {
+  gap: 5rem !important; /* Generous spacing */
+}
+
+body[data-page="home"] .proof-stage-copy,
+body[data-page="home"] .proof-stage-media {
+  min-width: 0 !important; /* Ensures the video and text never slide into each other */
+}
+
+/* --- SCOPED HOME PAGE: LARGER CEO IMAGE --- */
+
+/* 1. Allows the image to grow larger and balance out the massive text */
+.home-ceo-strip__media {
+  max-width: 30rem !important; /* Increased massively from 18rem */
+  width: 100%;
+  justify-self: center; /* Centers the newly enlarged image in its column */
+}
+
+/* 2. Reshapes the frame to 'zoom out' and reveal the full photo */
+.home-ceo-strip__media .media-frame--portrait {
+  /* Changed from a tall 0.85 to a slightly wide 1.15 to fit the original image dimensions better */
+  aspect-ratio: .95; 
+  width: 100%;
+  box-shadow: var(--shadow-soft); 
+}
+
+/* 3. Perfects the crop alignment */
+.home-ceo-strip__media .media-frame--portrait img {
+  /* Anchors the image so Valarie stays perfectly centered as the box widens */
+  object-position: center left; 
+}
 
 /* --- BOTTOM GRID SPACING --- */
 .system-outline-grid {
@@ -2886,6 +3014,15 @@ body[data-page="insights"] .insights-hero .section-lead {
   .process-list,
   .process-list--three {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-ceo-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .home-ceo-strip__media {
+    justify-self: start;
+    max-width: 15rem;
   }
 }
 

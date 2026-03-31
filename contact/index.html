@@ -59,7 +59,7 @@
         <p class="eyebrow">Contact</p>
         <h1>Contact WrightNow Solutions.</h1>
         <p>
-          Use the form below to draft an email to WNS. Share the challenge, the audience, and the kind of support you need next.
+          Use the form below to share the challenge, the audience, and the kind of support you need next.
         </p>
       </div>
     </section>
@@ -70,9 +70,16 @@
           <div class="contact-intro">
             <p class="eyebrow">Start here</p>
             <h2>Share the challenge and WNS will outline the right next step.</h2>
-            <p>This form opens an email draft with your details so the first reply can stay focused and useful.</p>
+            <p>Submit your details and WNS will follow up with the right next step.</p>
           </div>
-          <form id="contact-form" class="contact-form">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            method="POST"
+          >
+            <!-- Replace REPLACE_WITH_FORM_ID with your live Formspree form ID before publishing. -->
+            <input type="hidden" name="_subject" value="WNS Contact Request">
             <div class="field-grid">
               <label>
                 Name
@@ -103,7 +110,7 @@
               What needs to improve
               <textarea name="message" rows="7" required></textarea>
             </label>
-            <button class="button button-primary" type="submit">Open Email Draft</button>
+            <button class="button button-primary" type="submit">Submit Request</button>
             <p class="form-note" data-form-status aria-live="polite"></p>
           </form>
         </div>
