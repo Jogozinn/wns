@@ -566,7 +566,7 @@ body[data-page="home"] .media-frame--hero img {
 }
 
 .hero-visual {
-  margin-top: 20px; /* drops image slightly */
+  margin-top: 10px; /* drops image slightly */
 }
 
 .media-frame--wide {
@@ -2047,6 +2047,27 @@ body[data-page="home"] .proof-stage-media {
   object-position: center left; 
 }
 
+/* --- HOME HERO REFINEMENT --- */
+
+body[data-page="home"] .home-hero h1 {
+  /* Increases width from 10ch to 24ch to allow a 3-line layout */
+  max-width: 24ch !important; 
+  
+  /* Slightly smaller font than the global default to feel more refined */
+  font-size: clamp(2.8rem, 4.2vw, 4.5rem) !important; 
+  
+  /* Adds a tiny bit of breathing room between the letters */
+  letter-spacing: -0.02em; 
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+/* Widens the margins of the subtext to create a centered editorial 'block' */
+body[data-page="home"] .home-hero p:not(.eyebrow) {
+  max-width: 50ch;
+  line-height: 1.65;
+}
+
 /* --- BOTTOM GRID SPACING --- */
 .system-outline-grid {
   margin-top: 3.25rem;
@@ -2850,6 +2871,45 @@ body[data-page="insights"] .insights-hero .section-lead {
 /* Optional: Subtle spacing tweak to match the 'Editorial' balance */
 .three-up-list .editorial-block .eyebrow {
   margin-bottom: 0.75rem;
+}
+
+/* --- SCOPED HOME CEO: PERFECT TOP ALIGNMENT --- */
+
+/* 1. Forces the photo and text columns to start at the exact same invisible top line */
+body[data-page="home"] .home-ceo-strip {
+  align-items: start !important;
+}
+
+/* 2. Removes unwanted space from the text container that was pushing it higher than the photo */
+body[data-page="home"] .home-ceo-strip__copy {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 3. Forces the eyebrow ("Valarie Wright, CEO") text to 'hang' flush from the top, aligning it with the photo frame */
+body[data-page="home"] .home-ceo-strip .eyebrow {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  line-height: 1; /* Ensures no invisible vertical text spacing */
+}
+
+/* --- HOME HERO: TEXT & PHOTO ALIGNMENT --- */
+
+/* 1. Snaps both columns to the top of the grid instead of centering them */
+body[data-page="home"] .home-hero .editorial-hero-grid {
+  align-items: start !important;
+}
+
+/* 2. Resets the image so it sits at the absolute top of the section */
+body[data-page="home"] .home-hero .hero-visual {
+  padding-top: 0 !important;
+}
+
+/* 3. This is the 'nudge' that lowers the text. 
+      Adjust this 4.5rem value until the eyebrow is exactly where you want it 
+      relative to the top of the photo. */
+body[data-page="home"] .home-hero .hero-copy {
+  padding-top: 2.5rem !important; 
 }
 
 
