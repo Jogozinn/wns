@@ -2914,6 +2914,8 @@ body[data-page="home"] .home-hero .hero-copy {
 
 
 
+
+
 /* --- SCOPED ORIGIN PILLAR ALIGNMENT --- */
 
 .origin-pillar-grid {
@@ -3224,5 +3226,503 @@ body[data-page="home"] .home-hero .hero-copy {
 
   * {
     transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   WNS PREMIUM MOBILE OPTIMIZATION PATCH
+   Forces strict stacking, scaling, and padding reductions for iPhone & Tablets
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  
+  /* --- 1. OVERRIDE FORCED DESKTOP GRIDS --- */
+  /* These were locked to 2 columns on desktop, we force them to 1 here */
+  .value-pillar-grid,
+  .origin-pillar-grid,
+  .home-ceo-strip,
+  .engagement-showcase .tier-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Break the 3 and 4 column specialty grids down early */
+  .capability-grid,
+  .outcome-grid-premium,
+  .trophy-gallery,
+  .program-action-grid,
+  .process-list--three,
+  .process-list--eight {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Force the Enterprise video and text to stack */
+  body[data-page="insights"] .enterprise-proof-zone .proof-stage {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+
+  /* Un-lock the forced Flexbox row on the Scholarship tier */
+  .tier-featured {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
+  }
+
+  /* --- 2. TAME THE MASSIVE DESKTOP PADDING --- */
+  /* Giant padding looks luxurious on desktop, but eats the whole mobile screen */
+  .cta-panel--dark,
+  .final-cta .cta-panel--dark {
+    padding: 2.5rem 1.5rem !important;
+  }
+
+  .final-cta .cta-panel__grid {
+    gap: 2rem !important;
+    grid-template-columns: 1fr !important;
+    text-align: left !important;
+  }
+
+  .home-cta .cta-panel__grid {
+    gap: 2.5rem !important;
+    text-align: left !important;
+  }
+
+  .support-panel,
+  .outline-card,
+  .contact-form-panel {
+    padding: 1.8rem 1.5rem !important;
+  }
+
+  /* --- 3. FIX AWKWARD TOP ALIGNMENTS --- */
+  /* Remove the custom "nudges" we used to align text to photos on desktop */
+  body[data-page="home"] .home-hero .hero-copy,
+  body[data-page="ceo"] .hero-copy,
+  .page-section .two-column-layout .editorial-block {
+    padding-top: 0 !important;
+  }
+
+  /* Let the big Valarie CEO image fill the screen naturally without clipping */
+  .home-ceo-strip__media {
+    max-width: 100% !important;
+    justify-self: center !important;
+  }
+
+  /* Prevent the sidebar card from forcing a desktop width */
+  .cta-sidebar-card {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+
+  /* --- 4. SCALE DOWN GIANT TYPOGRAPHY --- */
+  /* Prevents words like "Readiness" from breaking awkwardly across lines */
+  body[data-page="home"] .home-hero h1,
+  .solutions-hero-realigned h1,
+  body[data-page="insights"] .insights-hero h1,
+  .editorial-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3rem) !important;
+    max-width: 100% !important;
+    line-height: 1.15 !important;
+  }
+
+  h2,
+  .section-header-stacked h2,
+  .section-header-centered h2,
+  .cta-panel__grid h2,
+  .mission-final-zone .section-header-stacked h2 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+    max-width: 100% !important;
+    line-height: 1.2 !important;
+  }
+
+  /* --- 5. EDGE-TO-EDGE MEDIA FIXES --- */
+  /* Because we reduced mobile padding on .editorial-block to 1.5rem, we must recalculate the negative margin to flush the videos perfectly to the edge */
+  .program-action-grid .media-frame--video {
+    margin: -1.8rem -1.5rem 0 -1.5rem !important; 
+    width: calc(100% + 3rem) !important; 
+  }
+  
+  .editorial-hero .media-frame--hero,
+  body[data-page="ceo"] .editorial-hero .media-frame--hero {
+    min-height: 250px !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  /* --- 6. FOOTER STACKING & ALIGNMENT --- */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  
+  .footer-bottom {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+}
+
+/* --- SPECIFIC FIX FOR HOME PAGE HERO (iPhone/Mobile) --- */
+@media (max-width: 860px) {
+  /* 1. Force the home hero grid to stack and remove the side-by-side layout */
+  body[data-page="home"] .editorial-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    align-items: flex-start !important;
+  }
+
+  /* 2. Remove the fixed height that is clipping the text at the bottom */
+  body[data-page="home"] .media-frame--hero {
+    height: auto !important; /* Critical: This stops the text from being cut off */
+    min-height: 300px !important;
+    aspect-ratio: 4 / 5; /* Keeps the portrait feel without the rigid height */
+  }
+
+  /* 3. Adjust image placement so it follows the text naturally */
+  body[data-page="home"] .hero-visual {
+    padding-top: 0 !important;
+    order: 2; /* Ensures the image stays below the text */
+  }
+
+  body[data-page="home"] .hero-copy {
+    order: 1;
+    padding-top: 1rem !important;
+  }
+
+  /* 4. Tweak the Home Hero typography so it doesn't feel cramped */
+  body[data-page="home"] .home-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.2rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  body[data-page="home"] .hero-copy p {
+    max-width: 100% !important;
+    font-size: 1.05rem !important;
+  }
+}
+
+/* --- FINAL HOME HERO & HEADER CALIBRATION --- */
+@media (max-width: 860px) {
+  
+  /* 1. CENTER THE HERO CONTENT */
+  /* This balances the "weird" alignment and centers your CTA button */
+  body[data-page="home"] .hero-copy {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Explicitly center the "Explore Solutions" link and the eyebrow */
+  body[data-page="home"] .hero-actions,
+  body[data-page="home"] .hero-copy .eyebrow {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Remove forced text widths so words don't break awkwardly on narrow screens */
+  h1, h2 {
+    max-width: 100% !important;
+  }
+
+  /* 2. PREVENT HEADER OVERLAP (TOP CUT-OFF) */
+  /* This pushes the text down significantly so it clears the logo box */
+  .editorial-hero {
+    padding-top: 13rem !important; 
+  }
+
+  /* 3. FIX MENU VISIBILITY & HEADER "CUT OFF" LOOK */
+  /* We give the header a solid background by default on mobile so the 
+     menu bars are visible immediately without needing to scroll. */
+  .site-header {
+    background: var(--bg-soft) !important;
+    border-bottom: 1px solid var(--line);
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* Shrink the logo slightly for mobile and give it a bit of left margin */
+  .brand {
+    max-width: 11.5rem !important;
+    padding-left: 1rem;
+  }
+
+  /* Fix the "3 bars" (hamburger menu) so they aren't cut off at the edge */
+  .menu-toggle {
+    display: inline-flex !important;
+    margin-right: 1.25rem;
+    padding: 0.8rem !important; /* Larger touch target and centers the bars */
+    align-self: center;
+  }
+
+  /* Ensure the Hero section doesn't have a forced height clipping the bottom text */
+  body[data-page="home"] .media-frame--hero {
+    height: auto !important;
+    min-height: 320px !important;
+  }
+}
+
+/* --- GLOBAL MOBILE HEADER FIX --- */
+@media (max-width: 860px) {
+  
+  /* 1. Make the header a flush, full-width frosted bar */
+  .site-header {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: rgba(251, 248, 243, 0.95) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(23, 19, 17, 0.08);
+  }
+
+  /* 2. Strip the floating "pill" constraints off the nav shell */
+  .nav-shell {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.6rem 1rem !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  /* 3. Kill the scroll animation pop-out effect on mobile */
+  .site-header.is-scrolled .nav-shell {
+    margin-top: 0 !important;
+    padding: 0.6rem 1rem !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  /* --- GLOBAL MOBILE IMAGE UN-CLIPPING --- */
+
+  /* 1. Remove forced minimum and maximum heights that crush images */
+  .media-frame,
+  .media-frame--hero,
+  body[data-page="home"] .media-frame--hero,
+  .home-ceo-strip__media .media-frame--portrait {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  /* 2. Force hero images to use a landscape ratio so they show the whole scene */
+  .editorial-hero .media-frame--hero,
+  body[data-page="home"] .media-frame--hero {
+    aspect-ratio: 16 / 9 !important;
+    width: 100% !important;
+  }
+
+  /* 3. Give Valarie's CEO portrait room to breathe without zooming in too tight */
+  .home-ceo-strip__media .media-frame--portrait {
+    aspect-ratio: 4 / 5 !important;
+    width: 100% !important;
+    max-width: 28rem !important; /* Prevents it from becoming massively oversized */
+    margin: 0 auto;
+  }
+}
+
+/* --- CRITICAL FIX: STRICT MOBILE BOUNDARIES (Stops right-side bleeding) --- */
+@media (max-width: 860px) {
+  
+  /* 1. Kill any horizontal scrolling caused by invisible overlapping elements */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* 2. Switch from 'calc' widths to strict padding so containers NEVER break the screen edge */
+  .shell, 
+  .shell-wide, 
+  .shell-narrow, 
+  .band-shell,
+  .nav-shell {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 3. Force all grid layouts and image containers to respect the new strict boundaries */
+  .editorial-hero-grid, 
+  .hero-visual, 
+  .media-frame,
+  .custom-video-wrapper,
+  .proof-stage-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* 4. Ensure the actual image tag never stretches past its parent frame */
+  .media-frame img, 
+  .media-frame video {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* --- PREMIUM MOBILE NAVIGATION OVERHAUL --- */
+@media (max-width: 860px) {
+  
+  /* 1. The Nav Container: Now a full-width drawer instead of a floating box */
+  .site-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh; /* Fills the screen to prevent background overlap */
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 1.5rem 3rem !important; /* Pushes content below the logo */
+    background: rgba(251, 248, 243, 0.98) !important;
+    backdrop-filter: blur(20px);
+    transform: translateY(-100%); /* Hidden by default */
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    z-index: 40;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* 2. Opening the Menu */
+  .site-nav.is-open {
+    display: flex !important;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 3. Main Links: Editorial Style */
+  .site-nav a, 
+  .nav-trigger {
+    font-size: 1.5rem !important; /* Large, easy-to-tap targets */
+    font-weight: 700 !important;
+    color: var(--ink) !important;
+    padding: 1.2rem 0 !important;
+    border-bottom: 1px solid rgba(23, 19, 17, 0.06);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* 4. The Accordion (Dropdowns) */
+  .nav-group {
+    display: block !important;
+  }
+
+  .nav-dropdown {
+    position: static !important;
+    background: rgba(23, 19, 17, 0.03) !important;
+    border-radius: 12px;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem !important;
+    display: none !important; /* Managed by JS/CSS toggle */
+    grid-template-columns: 1fr !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Show the dropdown when the group is open */
+  .nav-group.is-open .nav-dropdown {
+    display: grid !important;
+  }
+
+  /* Sub-links inside the dropdown */
+  .nav-dropdown a {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 1rem !important;
+    border-bottom: none !important;
+    color: var(--muted) !important;
+  }
+
+  /* 5. The Hamburger Button: Ensure it stays on top */
+  .menu-toggle {
+    z-index: 55 !important;
+    position: relative;
+  }
+
+  /* Animation for the hamburger bars when open */
+  .nav-open .menu-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .menu-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* 6. Footer-style Contact in Nav */
+  .site-nav::after {
+    content: "info@wrightnowsolutions.com";
+    display: block;
+    margin-top: auto;
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--brand);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* --- COMPACT MOBILE FOOTER --- */
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 2rem 0 1rem !important; /* Reduces top/bottom bulk */
+  }
+
+  .footer-grid {
+    /* Switch to a 2-column grid for the link sections */
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important; /* Shrinks the empty space between blocks */
+  }
+
+  .footer-brand-block {
+    grid-column: 1 / -1; /* Keeps the logo and description full-width at the top */
+    margin-bottom: 0.5rem;
+    max-width: 100% !important;
+  }
+
+  .footer-lead {
+    font-size: 0.85rem !important; /* Smaller, more editorial font size */
+    line-height: 1.5 !important;
+    max-width: 100% !important;
+  }
+
+  .footer-column {
+    gap: 0.25rem !important; /* Tightens the link lists */
+  }
+
+  .footer-heading {
+    margin-bottom: 0.2rem !important; /* Brings headers closer to their links */
+    font-size: 0.75rem !important;
+  }
+
+  .footer-column a, 
+  .footer-column p {
+    font-size: 0.85rem !important;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem !important;
+    padding-top: 0.8rem !important;
+    text-align: center;
+    align-items: center !important;
   }
 }
