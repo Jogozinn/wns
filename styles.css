@@ -1439,22 +1439,93 @@ body[data-page="home"] .media-frame--hero img {
 }
 
 /* --- PREMIUM SPLIT CTA LAYOUT (FIXED) --- */
-.home-cta .cta-panel__grid {
-  grid-template-columns: 1fr auto; 
-  align-items: end; /* Pulls the button down so it anchors perfectly with the paragraph */
+/* --- PREMIUM CTA REDESIGN --- */
+.cta-panel--premium {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1513 0%, #2d1814 100%);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 5rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 4rem;
-  text-align: left;
-  max-width: 68rem; /* Stops the content from stretching into an awkward void */
-  margin: 0 auto; /* Centers the whole text/button group inside the dark box */
 }
 
-.home-cta .cta-panel__grid > div {
-  max-width: 42rem; /* Controls the text width so the headline breaks cleanly */
+/* Subtle gold radial glow to balance the dark background */
+.cta-panel--premium::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 55%;
+  height: 150%;
+  background: radial-gradient(circle at right center, rgba(215, 164, 91, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-.home-cta .cta-panel__grid h2 {
-  max-width: none; /* Ensures the headline isn't artificially choked */
-  margin-bottom: 1.2rem; /* Adds breathing room between the big text and the small text */
+.cta-panel--premium .cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 44rem;
+}
+
+.cta-panel--premium .eyebrow {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.25rem;
+}
+
+.cta-panel--premium h2 {
+  color: #ffffff;
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  max-width: 20ch;
+}
+
+.cta-panel--premium p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 55ch;
+  margin: 0;
+}
+
+.cta-panel--premium .cta-action {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* Slightly larger, beefier button for the main CTA */
+.cta-panel--premium .button-primary {
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(124, 45, 31, 0.25);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 860px) {
+  .cta-panel--premium {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.5rem 2rem;
+    gap: 2.5rem;
+  }
+  
+  .cta-panel--premium .cta-action {
+    width: 100%;
+  }
+  
+  .cta-panel--premium .button-primary {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .home-cta .button-row {
